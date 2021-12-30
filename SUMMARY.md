@@ -1,29 +1,63 @@
 # Table of contents
 
-* [What is MyProduct?](README.md)
+* [Welcome to RCommon](README.md)
 
-## Guides
+## Getting Started
 
-* [Creating your first project](guides/creating-your-first-project.md)
-* [Creating your first task](guides/creating-your-first-task.md)
-* [Advanced permissions](guides/advanced-permissions.md)
+* [Running Samples](getting-started/running-samples.md)
+* [Use in Existing Project](getting-started/use-in-existing-project.md)
 
-## Fundamentals
+## Documentation
 
-* [Projects](fundamentals/projects.md)
-* [Members](fundamentals/members.md)
-* [Task Lists](fundamentals/task-lists.md)
-* [Tasks](fundamentals/tasks.md)
+* [Introduction and Use Case](documentation/introduction-and-use-case.md)
+* [Fundamentals](documentation/fundamentals/README.md)
+  * [Dependency Injection](documentation/fundamentals/dependency-injection/README.md)
+    * [Providers](documentation/fundamentals/dependency-injection/providers/README.md)
+      * [Autofac](documentation/fundamentals/dependency-injection/providers/autofac.md)
+      * [CastleWindsor](documentation/fundamentals/dependency-injection/providers/castlewindsor.md)
+      * [Microsoft](documentation/fundamentals/dependency-injection/providers/microsoft.md)
+  * [Configuration](documentation/fundamentals/configuration.md)
+  * [Options](documentation/fundamentals/options.md)
+  * [Validation](documentation/fundamentals/validation/README.md)
+    * [Helpers](documentation/fundamentals/validation/helpers.md)
+    * [Fluent Validation](documentation/fundamentals/validation/fluent-validation.md)
+  * [Exception Handling](documentation/fundamentals/exception-handling/README.md)
+    * [Providers](documentation/fundamentals/exception-handling/providers/README.md)
+      * [Exception Handling Application Block (EHAB)](documentation/fundamentals/exception-handling/providers/exception-handling-application-block-ehab.md)
+  * [Validation](documentation/fundamentals/validation-1.md)
+  * [Persistence](documentation/fundamentals/persistence/README.md)
+    * [Repository Pattern](documentation/fundamentals/persistence/repository-pattern.md)
+    * [Providers](documentation/fundamentals/persistence/providers/README.md)
+      * [Entity Framework Core](documentation/fundamentals/persistence/providers/entity-framework-core.md)
+      * [NHibernate](documentation/fundamentals/persistence/providers/nhibernate.md)
+      * [MongoDb](documentation/fundamentals/persistence/providers/mongodb.md)
+      * [Dapper](documentation/fundamentals/persistence/providers/dapper.md)
+  * [Transactions and Unit of Work](documentation/fundamentals/transactions-and-unit-of-work.md)
+  * [Logging](documentation/fundamentals/logging.md)
+  * [Application State](documentation/fundamentals/application-state.md)
+  * [Caching](documentation/fundamentals/caching.md)
+  * [Authorization](documentation/fundamentals/authorization.md)
+* [Infrastructure](documentation/infrastructure/README.md)
+  * [Background Jobs](documentation/infrastructure/background-jobs.md)
+  * [Email Sending](documentation/infrastructure/email-sending.md)
+  * [GUID Generation](documentation/infrastructure/guid-generation.md)
+  * [Time and Date](documentation/infrastructure/time-and-date.md)
+  * [Real Time](documentation/infrastructure/real-time.md)
+  * [MediatR Pipeline](documentation/infrastructure/mediatr-pipeline.md)
+  * [MassTransit](documentation/infrastructure/masstransit.md)
+  * [Events](documentation/infrastructure/events/README.md)
+    * [Local Events](documentation/infrastructure/events/local-events.md)
+    * [Distributed Events](documentation/infrastructure/events/distributed-events.md)
+  * [Change Tracking](documentation/infrastructure/change-tracking.md)
+  * [CRUD Helpers](documentation/infrastructure/crud-helpers.md)
+* [Architecture](documentation/architecture/README.md)
+  * [Overview](documentation/architecture/overview.md)
+  * [Domain Driven Design](documentation/architecture/domain-driven-design.md)
+  * [Microservices](documentation/architecture/microservices.md)
+  * [Clean Architecture](documentation/architecture/clean-architecture.md)
+  * [Multi-Tenancy](documentation/architecture/multi-tenancy.md)
 
-## Use Cases
+## Samples
 
-* [For Designers](use-cases/for-designers/README.md)
-  * [Figma Integration](use-cases/for-designers/figma-integration.md)
-* [For Engineers](use-cases/for-engineers/README.md)
-  * [GitHub Integration](use-cases/for-engineers/github-integration.md)
-* [For Support](use-cases/for-support/README.md)
-  * [Intercom Integration](use-cases/for-support/intercom-integration.md)
-
-## Extras
-
-* [Keyboard Shortcuts](extras/keyboard-shortcuts.md)
+* [Microservices](samples/microservices.md)
+* [Basic 3-Tier](samples/basic-3-tier.md)
