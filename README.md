@@ -1,34 +1,29 @@
+---
+description: >-
+  RCommon is an application framework that aims to provide a simple
+  configuration interface for commonly used infrastructure and architectural
+  patterns used widely across the .NET 6 stack.
+---
+
 # Welcome to RCommon
 
-{% hint style="info" %}
-**Good to know:** providing a brief overview of your product and its core use cases is a great place to start with product docs. Your product might seem obvious to you – you made it! However, to others, even folks who are trying your product after reading your site or getting a sales demo, it can still be unclear. This is your chance to clarify your product and set the right expectations!
-{% endhint %}
+## Our Philosophy
 
-Here are a couple of examples of succinct overviews from products with really great docs:
-
-> Loom is a video messaging tool that helps you get your message across through instantly shareable videos.
->
-> With Loom, you can record your camera, microphone, and desktop simultaneously. Your video is then instantly available to share through Loom's patented technology.
->
-> — From the [Loom Docs](https://support.loom.com/hc/en-us/articles/360002158057-What-is-Loom-)
-
-> The Mailchimp Marketing API provides programmatic access to Mailchimp data and functionality, allowing developers to build custom features to do things like sync email activity and campaign analytics with their database, manage audiences and campaigns, and more.
->
-> — From the [Mailchimp Marketing API docs](https://mailchimp.com/developer/marketing/docs/fundamentals/)
+We've built A LOT of applications on a lot of different application architectures with a variety of needs. During the design phase of those projects, we've made a lot of architectural choices based on the needs of the organization, budget, timeline, etc. Chances are that you've had to make some of these choices in the past. Or perhaps your making some of those choices right now. Our philosophy with RCommon is that software engineers should have flexibility in their choices of infrastructure, and the freedom from being strapped to those choices forever. Furthermore, we believe that having flexibility and freedom in application architecture, should not come at great cost to time or monetary value when you choose to exercise flexibility or freedom at any point in the future based on changing needs.
 
 ## Getting Started
 
-**Got 2 minutes?** Check out a video overview of our product:
+**Got 2 minutes?** Check out a video overview of our application framework:
 
 {% embed url="https://www.loom.com/share/3bfa83acc9fd41b7b98b803ba9197d90" %}
 
 {% hint style="info" %}
-**Good to know:** A succinct video overview is a great way to introduce folks to your product. Embed a Loom, Vimeo or YouTube video and you're good to go! We love this video from the fine folks at [Loom](https://loom.com) as a perfect example of a succinct feature overview.
+**Quick Tip:** RCommon is a configuration heavy framework which allows us to give you only what  you need for your application. Before jumping into the samples, we recommend at least reading through the Fundamentals-> [Configuration ](documentation/fundamentals/configuration.md)section.
 {% endhint %}
 
-### Guides: Jump right in
+### Jump Right In
 
-Follow our handy guides to get started on the basics as quickly as possible:
+Ok, we've got it...lets look at some code!
 
 {% content-ref url="getting-started/running-samples.md" %}
 [running-samples.md](getting-started/running-samples.md)
@@ -38,17 +33,9 @@ Follow our handy guides to get started on the basics as quickly as possible:
 [use-in-existing-project.md](getting-started/use-in-existing-project.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+### Dive a little deeper
 
-{% hint style="info" %}
-**Good to know:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in your product.
-{% endhint %}
-
-### Fundamentals: Dive a little deeper
-
-Learn the fundamentals of MyProduct to get a deeper understanding of our main features:
+Reading through the fundamentals of RCommon is a great place to improve your understanding of what it can do.&#x20;
 
 {% content-ref url="documentation/introduction-and-use-case.md" %}
 [introduction-and-use-case.md](documentation/introduction-and-use-case.md)
@@ -65,7 +52,3 @@ Learn the fundamentals of MyProduct to get a deeper understanding of our main fe
 {% content-ref url="documentation/architecture/" %}
 [architecture](documentation/architecture/)
 {% endcontent-ref %}
-
-{% hint style="info" %}
-**Good to know:** Splitting your product into fundamental concepts, objects, or areas can be a great way to let readers deep dive into the concepts that matter most to them. Combine guides with this approach to 'fundamentals' and you're well on your way to great documentation!
-{% endhint %}
