@@ -1,5 +1,5 @@
 # Fundamentals
 
 {% hint style="info" %}
-**Good to know:** Splitting your product into fundamental concepts, objects, or areas can be a great way to let readers deep dive into the concepts that matter most to them.
+**Heads Up:** RCommon covers a lot of fundamental areas. It is worth a quick read to get up to speed on our general strategy for handling certain situations.
 {% endhint %}
