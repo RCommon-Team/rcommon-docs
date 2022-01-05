@@ -12,7 +12,7 @@ One of the primary tenants of RCommon is flexibility which requires that we give
 
 ### Configuration Examples
 
-Below is a common configuration scenario. Many more are covered in the Configuration documentation but this will give you the gist&#x20;
+Below is a common configuration scenario. Many more are covered in the Configuration documentation but this will give you the gist:&#x20;
 
 ```
         // ConfigureServices is where you register dependencies. This gets
@@ -33,3 +33,14 @@ Below is a common configuration scenario. Many more are covered in the Configura
         
 ```
 
+To begin configuring RCommon, you must pass in the dependency injection container adapter you wish to use into the configuration entry point. We've created adapters for commonly used providers.
+
+{% hint style="info" %}
+&#x20;Once the container adapter has been instantiated and passed into the RCommon configuration entry point, you may configure the container using any strategy you wish. We recommend that you continue using the DI container adapter to register dependencies as that will allow you to keep your application truly future proofed from evolving or deprecated DI containers.  But once the container is created, you may use whatever strategy you want for container configuration.&#x20;
+{% endhint %}
+
+### IContainerAdapter Interface
+
+We support relatively straight-forward dependency injection via IContainerAdapter. Ultimately each provider created extensions so that your registrations may be handled through the IServiceCollection interface. Our container adapters merely implement the registration interfaces.
+
+![](../../../.gitbook/assets/IContainerAdapter.JPG)
