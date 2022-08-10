@@ -37,8 +37,8 @@ Ok, we've got it...lets look at some code!
 
 Reading through the fundamentals of RCommon is a great place to improve your understanding of what it can do.&#x20;
 
-{% content-ref url="documentation/introduction-and-use-case.md" %}
-[introduction-and-use-case.md](documentation/introduction-and-use-case.md)
+{% content-ref url="documentation/introduction-and-use-cases/" %}
+[introduction-and-use-cases](documentation/introduction-and-use-cases/)
 {% endcontent-ref %}
 
 {% content-ref url="documentation/fundamentals/" %}

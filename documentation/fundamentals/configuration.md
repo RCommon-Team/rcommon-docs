@@ -19,11 +19,10 @@ At minimum, you will need to configure a container adapter and state storage. We
 Generally speaking, you'll want to configure RCommon with some of its more useful features such as:&#x20;
 
 * [Persistence](persistence/)
-* [Unit of Work & Distributed Unit of Work](transactions-and-unit-of-work.md)
+* [Unit of Work & Distributed Unit of Work](persistence/transactions/)
 * [Exception Handling](exception-handling/)
 * [Distributed Messaging via MassTransit](../infrastructure/masstransit.md)
 * [Mediator Behaviors Pipeline via MediatR](../infrastructure/mediatr-pipeline.md)
-* [Background Jobs](../infrastructure/background-jobs.md)
 * and other utilities
   * [Time/Date ](../infrastructure/time-and-date.md)
   * [Guid Generation](../infrastructure/guid-generation.md)

@@ -8,6 +8,6 @@ The following are a list of officially supported DI containers (providers) which
 
 |                                           Provider                                           |                   Adapter                   |
 | :------------------------------------------------------------------------------------------: | :-----------------------------------------: |
-|                                [Autofac](https://autofac.org)                                |    [AutofacContainerAdapter](autofac.md)    |
+|                                [Autofac](https://autofac.org/)                               |    [AutofacContainerAdapter](autofac.md)    |
 |                [CastleWindsor](http://www.castleproject.org/projects/windsor/)               | [WindsorContainerAdapter](castlewindsor.md) |
 | [Microsoft DI](https://docs.microsoft.com/en-us/dotnet/core/extensions/dependency-injection) |  [DotNetCoreContainerAdapter](microsoft.md) |

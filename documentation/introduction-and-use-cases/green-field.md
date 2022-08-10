@@ -1,10 +1,16 @@
-# Introduction and Use Case
+---
+description: >-
+  A new or relatively undefined solution architecture where you need to get
+  going right away.
+---
 
-## Use Case: Green Field Project
+# Green Field
+
+## Use Case
 
 As a software engineer or application architect, you have been tasked with creating a new solution architecture for a project you have taken on. You have already chosen .NET 6+ as the foundation technology and now you are looking for an application framework that does a lot of the "plumbing" for common infrastructure components such as persistence, exception handling, unit of work, distributed events, validation, etc.&#x20;
 
-You have some solid choices out there: [ABP Framework](https://apb.io), and [Orchard Core](https://orchardcore.net) are some great choices depending on your needs. RCommon is yet another choice. Have a look at the comparison chart below to get a high level understanding of the differences - note this is not an exhaustive comparison:
+You have some solid choices out there: [ABP Framework](https://apb.io), and [Orchard Core](https://orchardcore.net/) are some great choices depending on your needs. RCommon is yet another choice. Have a look at the comparison chart below to get a high level understanding of the differences - note this is not an exhaustive comparison:
 
 | Feature                                                |        RCommon       |          ABP         |     Orchard Core     | Notes |
 | ------------------------------------------------------ | :------------------: | :------------------: | :------------------: | ----- |

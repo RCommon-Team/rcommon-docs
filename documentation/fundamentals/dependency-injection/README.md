@@ -6,9 +6,15 @@ description: RCommon's strategy for dealing with dependency injection.
 
 ## Overview
 
-Dependency injection (DI) has become ubiquitous in modern application development. It makes so many things easier to deal with but as some dependency injection frameworks have matured, they have introduced various utilities (e.g. dependency scanning) which are not supported by all dependency injection frameworks, but are useful nonetheless.&#x20;
+Dependency injection (DI) has become ubiquitous in modern application development and is the utility which ultimately provides dependency inversion - the "D" in [SOLID ](https://en.wikipedia.org/wiki/SOLID)object oriented design. It makes so many things easier to deal with but as some dependency injection frameworks have matured, they have introduced various utilities (e.g. dependency scanning) which are not supported by all dependency injection frameworks, but are useful nonetheless.&#x20;
 
 One of the primary tenants of RCommon is flexibility which requires that we give developers the freedom to choose whatever dependency injection framework they are comfortable with. As  result, we have utilized abstractions for dependency injection. We've also tried to keep configuration of DI pretty straight-forward - there is not any assembly/dependency scanning, pattern-based convention scanning, or other auto-bootstrapping logic involved. All configurations within RCommon have explicit abstraction/implementation definitions so that you, the developer, are not stuck trying to figure out how/why/what abstractions are used.&#x20;
+
+### Use Cases for Dependency Injection
+
+* Freedom to use whatever dependency injection container you want
+* Insulation from changing dependency injection programming interfaces (future proofing)
+* Fluent DI configuration interface
 
 ### Configuration Examples
 
