@@ -20,22 +20,22 @@ One of the primary tenants of RCommon is flexibility which requires that we give
 
 Below is a common configuration scenario. Many more are covered in the Configuration documentation but this will give you the gist:&#x20;
 
-```
-        // ConfigureServices is where you register dependencies. This gets
-        // called by the runtime before the ConfigureContainer method, below.
-        public void ConfigureServices(IServiceCollection services)
+```csharp
+// ConfigureServices is where you register dependencies. This gets
+// called by the runtime before the ConfigureContainer method, below.
+public void ConfigureServices(IServiceCollection services)
+{
+    // Configure RCommon
+    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(services)) // Allows us to use generic Dependency Injection. We could easily swap out for Autofac with a few lines of code
+        .WithStateStorage<DefaultStateStorageConfiguration>() // Basic state management. This layer mostly encapsulates the web runtime. Microsoft has a bad habit of revising what an HttpContext is/means so we limit that impact.
+        .And<DataServicesConfiguration>(x=>
+            x.WithUnitOfWork<DefaultUnitOfWorkConfiguration>()) // Everything releated to transaction management. Powerful stuff happens here.
+        .WithPersistence<EFCoreConfiguration>(x => // Repository/ORM configuration. We could easily swap out to NHibernate without impact to domain service up through the stack
         {
-            // Configure RCommon
-            ConfigureRCommon.Using(new DotNetCoreContainerAdapter(services)) // Allows us to use generic Dependency Injection. We could easily swap out for Autofac with a few lines of code
-                .WithStateStorage<DefaultStateStorageConfiguration>() // Basic state management. This layer mostly encapsulates the web runtime. Microsoft has a bad habit of revising what an HttpContext is/means so we limit that impact.
-                .And<DataServicesConfiguration>(x=>
-                    x.WithUnitOfWork<DefaultUnitOfWorkConfiguration>()) // Everything releated to transaction management. Powerful stuff happens here.
-                .WithPersistence<EFCoreConfiguration>(x => // Repository/ORM configuration. We could easily swap out to NHibernate without impact to domain service up through the stack
-                {
-                    // Add all the DbContexts here
-                    x.UsingDbContext<SamplesContext>();
-                });
-        }
+            // Add all the DbContexts here
+            x.UsingDbContext<SamplesContext>();
+        });
+}
         
 ```
 

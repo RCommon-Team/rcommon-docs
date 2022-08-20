@@ -6,25 +6,87 @@ description: How to configure RCommon.
 
 The simplest way to configure RCommon is to use the configuration entry point serves as a fluent dependency injection interface for bootstrapping the framework and all its necessary dependencies. From there you'll need to choose which dependency injection container to use and instantiate the [correlated adapter](dependency-injection/di-providers/) so that RCommon knows which container to use to register and resolve dependencies from.&#x20;
 
-![RCommon configuration entry point](../../.gitbook/assets/RCommon-configuration-entry-point.JPG)
+### Method Extensions
 
-### Minimum Configuration
+There is no configuration to use our method extensions right out of gate. There is also a useful list of helper classes that may be able to help you with smaller projects.&#x20;
 
-At minimum, you will need to configure a container adapter and state storage. We recommend using the "DefaultStateStorageConfiguration" as that will bootstrap both web and non-web applications with minimal [application state storage options](application-state.md).
+### Utilities
 
-![](../../.gitbook/assets/RCommon-minimal-configuration.JPG)
+At minimum, you will need to configure a container adapter and state storage. We recommend using the "DefaultStateStorageConfiguration" as that will bootstrap both web and non-web applications with a helpful list of utility classes and simple [application state storage options](application-state.md).&#x20;
 
-### More Useful Configurations
+```csharp
+protected void InitializeRCommon(IServiceCollection services)
+{
+    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(services))
+        .WithStateStorage<DefaultStateStorageConfiguration>();
+}
+```
 
-Generally speaking, you'll want to configure RCommon with some of its more useful features such as:&#x20;
+### [Guid Generation](../infrastructure/guid-generation.md)
 
-* [Persistence](persistence/)
-* [Unit of Work & Distributed Unit of Work](persistence/transactions/)
-* [Exception Handling](exception-handling/)
-* [Distributed Messaging via MassTransit](../infrastructure/masstransit.md)
-* [Mediator Behaviors Pipeline via MediatR](../infrastructure/mediatr-pipeline.md)
-* and other utilities
-  * [Time/Date ](../infrastructure/time-and-date.md)
-  * [Guid Generation](../infrastructure/guid-generation.md)
-  * [Email](../infrastructure/email-sending.md)
+<pre class="language-csharp"><code class="lang-csharp"><strong>protected void InitializeRCommon(IServiceCollection services)
+</strong>{
+
+    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(builder.Services))
+        .WithGuidGenerator&#x3C;SequentialGuidGenerator>(x => 
+            x.DefaultSequentialGuidType = SequentialGuidType.SequentialAsString));
+}</code></pre>
+
+### [Time and Date](../infrastructure/time-and-date.md)
+
+```csharp
+protected void InitializeRCommon(IServiceCollection services)
+{
+
+    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(builder.Services))
+        .WithDateTimeSystem<SystemTime>(x => x.Kind = DateTimeKind.Utc));
+}
+```
+
+### [MediaR Pipeline](design-patterns/mediator.md)
+
+```csharp
+protected void InitializeRCommon(IServiceCollection services)
+{
+
+    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(builder.Services))
+        .WithStateStorage<DefaultStateStorageConfiguration>()
+        .WithPersistence<EFCoreConfiguration>(x =>
+            x.UsingDbContext<LeaveManagementDbContext>())
+        .And<DataServicesConfiguration>(x =>
+            x.WithUnitOfWork<DefaultUnitOfWorkConfiguration>())
+        .AddUnitOfWorkToMediatorPipeline());
+}
+```
+
+### [Email Sending](../infrastructure/email-sending.md)
+
+
+
+### [Persistence w/ Unit of Work](persistence/)
+
+```csharp
+protected void InitializeRCommon(IServiceCollection services)
+{
+
+    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(builder.Services))
+        .WithStateStorage<DefaultStateStorageConfiguration>()
+        .WithPersistence<EFCoreConfiguration>(x =>
+            x.UsingDbContext<LeaveManagementDbContext>())
+        .And<DataServicesConfiguration>(x =>
+            x.WithUnitOfWork<DefaultUnitOfWorkConfiguration>()));
+}
+```
+
+### [Exception Handling](exception-handling/)
+
+```csharp
+protected void InitializeRCommon(IServiceCollection services)
+{
+
+    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(services))
+        .And<EhabExceptionHandlingConfiguration>(x=>
+            x.UsingDefaultExceptionPolicies());
+}
+```
 
