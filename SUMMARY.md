@@ -5,7 +5,6 @@
 ## Getting Started
 
 * [Running Samples](getting-started/running-samples.md)
-* [Use in Existing Project](getting-started/use-in-existing-project.md)
 * [Roadmap](getting-started/roadmap.md)
 
 ## Documentation
@@ -29,6 +28,7 @@
     * [Transactions](documentation/fundamentals/persistence/transactions/README.md)
       * [Native Transactions](documentation/fundamentals/persistence/transactions/native-transactions.md)
       * [Distributed Transactions](documentation/fundamentals/persistence/transactions/distributed-transactions.md)
+  * [Current User](documentation/fundamentals/current-user.md)
   * [Logging](documentation/fundamentals/logging.md)
   * [Application State](documentation/fundamentals/application-state.md)
   * [Authorization](documentation/fundamentals/authorization.md)
@@ -62,5 +62,5 @@
 
 ## Samples
 
+* [Clean Architecture with CQRS](samples/clean-architecture-with-cqrs.md)
 * [Microservices](samples/microservices.md)
-* [Basic 3-Tier](samples/basic-3-tier.md)

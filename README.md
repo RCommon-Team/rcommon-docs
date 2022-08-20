@@ -29,8 +29,8 @@ Ok, we've got it...lets look at some code!
 [running-samples.md](getting-started/running-samples.md)
 {% endcontent-ref %}
 
-{% content-ref url="getting-started/use-in-existing-project.md" %}
-[use-in-existing-project.md](getting-started/use-in-existing-project.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### Dive a little deeper
