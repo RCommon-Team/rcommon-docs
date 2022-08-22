@@ -11,13 +11,10 @@ Through the repository pattern, we are able to a variety of other patterns that 
 ```csharp
 public class DeleteLeaveRequestCommandHandler : IRequestHandler<DeleteLeaveRequestCommand>
 {
-    private readonly IMapper _mapper;
     private readonly IFullFeaturedRepository<LeaveRequest> _leaveRequestRepository;
 
-    public DeleteLeaveRequestCommandHandler(IMapper mapper, 
-        IFullFeaturedRepository<LeaveRequest> leaveRequestRepository)
+    public DeleteLeaveRequestCommandHandler(IFullFeaturedRepository<LeaveRequest> leaveRequestRepository)
     {
-        _mapper = mapper;
         this._leaveRequestRepository = leaveRequestRepository;
         this._leaveRequestRepository.DataStoreName = "LeaveManagement";
     }
