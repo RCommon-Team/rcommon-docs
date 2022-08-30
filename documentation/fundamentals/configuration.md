@@ -12,13 +12,12 @@ There is no configuration to use our method extensions right out of gate. There 
 
 ### Utilities
 
-At minimum, you will need to configure a container adapter and state storage. We recommend using the "DefaultStateStorageConfiguration" as that will bootstrap both web and non-web applications with a helpful list of utility classes and simple [application state storage options](application-state.md).&#x20;
+At minimum, you will need to configure a container adapter. This will bootstrap your application with RCommon using the dependency injection container of your choice. The minimum configuration provides you will access to many utility classes and services.&#x20;
 
 ```csharp
 protected void InitializeRCommon(IServiceCollection services)
 {
-    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(services))
-        .WithStateStorage<DefaultStateStorageConfiguration>();
+    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(services));
 }
 ```
 
@@ -59,7 +58,7 @@ protected void InitializeRCommon(IServiceCollection services)
 }
 ```
 
-### [Email Sending](../infrastructure/email-sending.md)
+### [Email Sending](../infrastructure/email-sending/)
 
 
 

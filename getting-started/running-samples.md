@@ -18,15 +18,16 @@ Our "Clean Architecture with CQRS" sample was built from an [existing educationa
 
 ### Start Up Instructions
 
-1. Right click on the HR.LeaveManagement.API project
-2. Choose "Open in Terminal" from menu
-3. Refer to Developer Powershell
-4. Run commands below:
+1. Download or clone [the source code](https://github.com/RCommon-Team/RCommon) from GitHub
+2. Right click on the HR.LeaveManagement.API project
+3. Choose "Open in Terminal" from menu
+4. Refer to Developer Powershell
+5. Run commands below:
    * dotnet ef database update --context LeaveManagementDbContext
    * dotnet ef database update --context LeaveManagementIdentityDbContext
-5. Right click solution and choose "Set Startup Projects" from menu.
-6. Choose "HR.LeaveManagement.MVC" and "HR.LeaveManagement.API" from menu options.
-7. Build and Start Solution
+6. Right click solution and choose "Set Startup Projects" from menu.
+7. Choose "HR.LeaveManagement.MVC" and "HR.LeaveManagement.API" from menu options.
+8. Build and Start Solution
 
 ### Login
 
