@@ -31,7 +31,7 @@ We've spent so long getting to the first public release that there is a laundry 
 * New Features
   * Improved Unit Testing Foundation
   * MongoDB Support
-  *
+  * Linq2Db Support
 
 ### Version 2.1
 
@@ -46,5 +46,7 @@ Up to this point, there has been nothing preventing developers from building app
 
 * Transactional and non-transactions domain events
 * Aggregate root support
-* Object graph persistence (support of rich models)
 * DDD Sample
+* Soft Deleting
+* Multitenancy
+* Concurrency Support

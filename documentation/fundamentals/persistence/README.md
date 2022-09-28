@@ -13,8 +13,7 @@ Most of our persistence strategies revolve around the need for the [unit of work
 ## Use Cases for Persistence
 
 * Use the Unit of Work pattern but not be tied to a specific ORM or tool.
-* Commit transactions to multiple databases because [TransactionScope ](https://docs.microsoft.com/en-us/dotnet/api/system.transactions.transactionscope?view=net-6.0)won't allow that anymore.
-* Built-in support for my [domain events](../../infrastructure/events/local-events.md) and [distributed events](../../infrastructure/events/distributed-events.md).
-* Built-in support for [change tracking](../../infrastructure/change-tracking.md) via entity base classes.
+* Built-in support for [domain events](../../infrastructure/events/local-events.md) and [distributed events](../../infrastructure/events/distributed-events.md).
+* Built-in support for [change tracking](broken-reference) via entity base classes.
 * Consistent programming interface no matter which ORM you're using.&#x20;
 * Freedom to create your own Repository pattern implementation and still utilize everything RCommon persistence offers.&#x20;

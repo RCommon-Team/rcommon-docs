@@ -58,7 +58,7 @@ protected void InitializeRCommon(IServiceCollection services)
 }
 ```
 
-### [Email Sending](../infrastructure/email-sending/)
+### [Email Sending](../infrastructure/emailing/)
 
 
 
