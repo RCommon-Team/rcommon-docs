@@ -24,8 +24,6 @@
   * [Persistence](documentation/fundamentals/persistence/README.md)
     * [Providers](documentation/fundamentals/persistence/providers/README.md)
       * [Entity Framework Core](documentation/fundamentals/persistence/providers/entity-framework-core.md)
-      * [NHibernate](documentation/fundamentals/persistence/providers/nhibernate.md)
-      * [MongoDb](documentation/fundamentals/persistence/providers/mongodb.md)
       * [Dapper](documentation/fundamentals/persistence/providers/dapper.md)
     * [Transactions](documentation/fundamentals/persistence/transactions/README.md)
       * [Native Transactions](documentation/fundamentals/persistence/transactions/native-transactions.md)
