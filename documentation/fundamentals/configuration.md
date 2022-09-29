@@ -26,7 +26,7 @@ protected void InitializeRCommon(IServiceCollection services)
 <pre class="language-csharp"><code class="lang-csharp"><strong>protected void InitializeRCommon(IServiceCollection services)
 </strong>{
 
-    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(builder.Services))
+    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(Services))
         .WithGuidGenerator&#x3C;SequentialGuidGenerator>(x => 
             x.DefaultSequentialGuidType = SequentialGuidType.SequentialAsString));
 }</code></pre>
@@ -37,26 +37,24 @@ protected void InitializeRCommon(IServiceCollection services)
 protected void InitializeRCommon(IServiceCollection services)
 {
 
-    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(builder.Services))
+    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(Services))
         .WithDateTimeSystem<SystemTime>(x => x.Kind = DateTimeKind.Utc));
 }
 ```
 
 ### [MediaR Pipeline](design-patterns/mediator.md)
 
-```csharp
-protected void InitializeRCommon(IServiceCollection services)
-{
+<pre class="language-csharp"><code class="lang-csharp"><strong>protected void InitializeRCommon(IServiceCollection services)
+</strong>{
 
-    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(builder.Services))
-        .WithStateStorage<DefaultStateStorageConfiguration>()
-        .WithPersistence<EFCoreConfiguration>(x =>
-            x.UsingDbContext<LeaveManagementDbContext>())
-        .And<DataServicesConfiguration>(x =>
-            x.WithUnitOfWork<DefaultUnitOfWorkConfiguration>())
+    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(Services))
+        .WithStateStorage&#x3C;DefaultStateStorageConfiguration>()
+        .WithPersistence&#x3C;EFCoreConfiguration>(x =>
+            x.UsingDbContext&#x3C;LeaveManagementDbContext>())
+        .And&#x3C;DataServicesConfiguration>(x =>
+            x.WithUnitOfWork&#x3C;DefaultUnitOfWorkConfiguration>())
         .AddUnitOfWorkToMediatorPipeline());
-}
-```
+}</code></pre>
 
 ### [Email Sending](../infrastructure/emailing/)
 
@@ -68,7 +66,7 @@ protected void InitializeRCommon(IServiceCollection services)
 protected void InitializeRCommon(IServiceCollection services)
 {
 
-    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(builder.Services))
+    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(Services))
         .WithStateStorage<DefaultStateStorageConfiguration>()
         .WithPersistence<EFCoreConfiguration>(x =>
             x.UsingDbContext<LeaveManagementDbContext>())

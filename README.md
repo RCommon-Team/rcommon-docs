@@ -11,12 +11,6 @@ description: >-
 
 We've built A LOT of applications on a lot of different application architectures with a variety of needs. During the design phase of those projects, we've made a lot of architectural choices based on the needs of the organization, budget, timeline, etc. Chances are that you've had to make some of these choices in the past. Or perhaps your making some of those choices right now. Our philosophy with RCommon is that software engineers should have flexibility in their choices of infrastructure, and the freedom from being strapped to those choices forever. Furthermore, we believe that having flexibility and freedom in application architecture, should not come at great cost to time or monetary value when you choose to exercise flexibility or freedom at any point in the future based on changing needs.
 
-## Getting Started
-
-**Got 2 minutes?** Check out a video overview of our application framework:
-
-{% embed url="https://www.loom.com/share/3bfa83acc9fd41b7b98b803ba9197d90" %}
-
 {% hint style="info" %}
 **Quick Tip:** RCommon is a configuration heavy framework which allows us to give you only what  you need for your application. Before jumping into the samples, we recommend at least reading through the Fundamentals-> [Configuration ](documentation/fundamentals/configuration.md)section.
 {% endhint %}

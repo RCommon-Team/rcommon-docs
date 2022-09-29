@@ -8,7 +8,7 @@ description: Roadmap for RCommon
 
 The initial version of RCommon was redesigned from the original NCommon project privately, but under the Apache 2.0 license. That version was not publicly released but we've built on the success of that production-level code.&#x20;
 
-### Version 1.0.1
+### Version 1.0.1 (Current)
 
 [Version 1.0.1 Kanban Board](https://github.com/RCommon-Team/RCommon/projects/1)
 
