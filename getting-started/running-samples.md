@@ -6,7 +6,7 @@ description: Running samples for RCommon
 
 ## Requirements
 
-* Visual Studio 2019 Community Edition+
+* Visual Studio 2022 Community Edition+
 * SQL Express 2019+
 * Requires EF Tools to be installed to dotnet CLI [https://docs.microsoft.com/en-us/ef/core/cli/dotnet](https://docs.microsoft.com/en-us/ef/core/cli/dotnet) - include updates.
 

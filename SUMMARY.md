@@ -6,6 +6,8 @@
 
 * [Running Samples](getting-started/running-samples.md)
 * [Roadmap](getting-started/roadmap.md)
+* [Releases](getting-started/releases/README.md)
+  * [1.0.1.75](getting-started/releases/1.0.1.75.md)
 
 ## Documentation
 
@@ -39,6 +41,8 @@
     * [Repository Pattern](documentation/fundamentals/design-patterns/repository-pattern.md)
     * [Unit of Work](documentation/fundamentals/design-patterns/unit-of-work.md)
     * [Mediator](documentation/fundamentals/design-patterns/mediator.md)
+  * [Data Transfer Objects](documentation/fundamentals/data-transfer-objects/README.md)
+    * [Pagination](documentation/fundamentals/data-transfer-objects/pagination.md)
 * [Infrastructure](documentation/infrastructure/README.md)
   * [Emailing](documentation/infrastructure/emailing/README.md)
     * [SMTP Email](documentation/infrastructure/emailing/smtp-email.md)
