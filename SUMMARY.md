@@ -8,6 +8,7 @@
 * [Roadmap](getting-started/roadmap.md)
 * [Releases](getting-started/releases/README.md)
   * [1.0.1.75](getting-started/releases/1.0.1.75.md)
+  * [1.0.2.0](getting-started/releases/1.0.2.0.md)
 
 ## Documentation
 

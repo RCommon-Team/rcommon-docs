@@ -8,17 +8,17 @@ description: Roadmap for RCommon
 
 The initial version of RCommon was redesigned from the original NCommon project privately, but under the Apache 2.0 license. That version was not publicly released but we've built on the success of that production-level code.&#x20;
 
-### Version 1.0.1 (Current)
+### Version 1.0.1&#x20;
 
 [Version 1.0.1 Kanban Board](https://github.com/RCommon-Team/RCommon/projects/1)
 
-Our first public release scheduled for late 2022. [GitHub "main"](https://github.com/RCommon-Team/RCommon) represents the current state of this release.&#x20;
+Our first public release published in late 2022. [GitHub "1.0.1.75"](https://github.com/RCommon-Team/RCommon) is where you can find the code for this release[. ](https://github.com/RCommon-Team/RCommon/tree/v1.0.1.75)We will continue to support 1.0.1.x as long as .NET 6 is supported.
 
-{% hint style="info" %}
-We are currently developing the final items before publishing 1.0.1. Most of the functionality has been running in a production capacity for various projects our team has been using for more than 5 years. The last of the work centers on samples, unit testing, integration testing, migration scripts, and documentation.&#x20;
-{% endhint %}
+### Version 1.0.2 (Current)
 
-### Version 2.0
+This release supports .NET 7 but does not add any additional features/enhancements beyond that. The [GitHub "Main" branch](https://github.com/RCommon-Team/RCommon/tree/main) represents the current state. We will conintue to support 1.0.2.x as long as .NET 7 is supported.&#x20;
+
+### Version 2.0 (In Development)
 
 We've spent so long getting to the first public release that there is a laundry list of items that need to get addressed - several new features, but also some opportunities for refinement. Given the scope of the changes to foundational layers, we feel a major version bump is warranted.  From there, we'll introduce new features more frequently using minor versions.&#x20;
 
