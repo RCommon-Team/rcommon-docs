@@ -18,7 +18,7 @@ Our first public release published in late 2022. [GitHub "1.0.1.75"](https://git
 
 This release supports .NET 7 but does not add any additional features/enhancements beyond that. The [GitHub "Main" branch](https://github.com/RCommon-Team/RCommon/tree/main) represents the current state. We will conintue to support 1.0.2.x as long as .NET 7 is supported.&#x20;
 
-### Version 2.0 (In Development)
+### Version 2.0 (In Testing)
 
 We've spent so long getting to the first public release that there is a laundry list of items that need to get addressed - several new features, but also some opportunities for refinement. Given the scope of the changes to foundational layers, we feel a major version bump is warranted.  From there, we'll introduce new features more frequently using minor versions.&#x20;
 
@@ -30,14 +30,19 @@ We've spent so long getting to the first public release that there is a laundry 
 * Improved Unit Testing Foundation
 * New Features
   * Improved Unit Testing Foundation
-  * MongoDB Support
   * Linq2Db Support
 
 ### Version 2.1
 
 Building upon a solid and fairly comprehensive set of persistence, and event based architecture infrastructure, our next focus will be on layering in support for microservice architecture and preparing for explicit domain driven design support.&#x20;
 
-* Event Sourcing Abstractions/support
+* CRUD Repositories Document DBs
+  * MongoDB
+* Event Sourcing Abstractions
+  * EventStore Support
+  * MongoDB Support
+  * Elastic Support
+  * Transactional DB (SQL) Support
 * Microservices Sample
 
 ### Version 2.2
@@ -50,3 +55,28 @@ Up to this point, there has been nothing preventing developers from building app
 * Soft Deleting
 * Multitenancy
 * Concurrency Support
+
+### Version 2.3
+
+Filling in some gaps with various implementations that are commonly used.&#x20;
+
+* Localization Support
+* Blob Abstractions
+* Template Abstractions
+* Identity Extensions
+
+### Future Versions (Conceptual)
+
+Implement abstractions needed for Actor model implementations.&#x20;
+
+* Implement Z.Extensions and deprecate all other foundational extensions methods (eliminate code bloat and increase unit testability)
+* Dapr Support
+* Akka.NET Support
+* Orleans Support?
+* Proto.Actor Support?
+
+Implement abstractions for Machine Learning implemenations
+
+* Sagemaker
+* Azure MLOps
+
