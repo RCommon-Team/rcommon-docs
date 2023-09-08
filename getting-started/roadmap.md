@@ -34,27 +34,28 @@ We've spent so long getting to the first public release that there is a laundry 
 
 ### Version 2.1
 
-Building upon a solid and fairly comprehensive set of persistence, and event based architecture infrastructure, our next focus will be on layering in support for microservice architecture and preparing for explicit domain driven design support.&#x20;
+Up to this point, there has been nothing preventing developers from building applications using domain driven design (DDD). But there are a few hiccups to getting there: the inability to delineate between transactional and non-transactional domain events, and having to roll your own aggregate root. This version attempts to reconcile all that!
 
 * CRUD Repositories Document DBs
   * MongoDB
-* Event Sourcing Abstractions
-  * EventStore Support
-  * MongoDB Support
-  * Elastic Support
-  * Transactional DB (SQL) Support
-* Microservices Sample
-
-### Version 2.2
-
-Up to this point, there has been nothing preventing developers from building applications using domain driven design (DDD). But there are a few hiccups to getting there: lack of explicit support for object graphs in repositories, the inability to delineate between transactional and non-transactional domain events, and having to roll your own aggregate root. This version attempts to reconcile all that!
-
-* Transactional and non-transactions domain events
+* Transactional and non-transactional domain events
 * Aggregate root support
 * DDD Sample
 * Soft Deleting
 * Multitenancy
 * Concurrency Support
+
+### Version 2.2
+
+Building upon a solid and fairly comprehensive set of persistence, and domain driven design, our next focus will be on layering in support for event driven applications.&#x20;
+
+* Event Sourcing Abstractions
+  * EventStore Support
+  * MongoDB Support
+  * Elastic Support
+  * Transactional DB (SQL) Support
+  * Read Model Projection Support
+* Microservices Sample
 
 ### Version 2.3
 
