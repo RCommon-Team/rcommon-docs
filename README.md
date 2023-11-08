@@ -12,7 +12,7 @@ description: >-
 We've built A LOT of applications on a lot of different application architectures with a variety of needs. During the design phase of those projects, we've made a lot of architectural choices based on the needs of the organization, budget, timeline, etc. Chances are that you've had to make some of these choices in the past. Or perhaps your making some of those choices right now. Our philosophy with RCommon is that software engineers should have flexibility in their choices of infrastructure, and the freedom from being strapped to those choices forever. Furthermore, we believe that having flexibility and freedom in application architecture, should not come at great cost to time or monetary value when you choose to exercise flexibility or freedom at any point in the future based on changing needs.
 
 {% hint style="info" %}
-**Quick Tip:** RCommon is a configuration heavy framework which allows us to give you only what  you need for your application. Before jumping into the samples, we recommend at least reading through the Fundamentals-> [Configuration ](documentation/fundamentals/configuration.md)section.
+**Quick Tip:** RCommon is a configuration heavy framework which allows us to give you only what  you need for your application. Before jumping into the samples, we recommend at least reading through the Fundamentals-> [Configuration ](v1/fundamentals/configuration.md)section.
 {% endhint %}
 
 ### Jump Right In
@@ -31,18 +31,18 @@ Ok, we've got it...lets look at some code!
 
 Reading through the fundamentals of RCommon is a great place to improve your understanding of what it can do.&#x20;
 
-{% content-ref url="documentation/introduction-and-use-cases/" %}
-[introduction-and-use-cases](documentation/introduction-and-use-cases/)
+{% content-ref url="v1/introduction-and-use-cases/" %}
+[introduction-and-use-cases](v1/introduction-and-use-cases/)
 {% endcontent-ref %}
 
-{% content-ref url="documentation/fundamentals/" %}
-[fundamentals](documentation/fundamentals/)
+{% content-ref url="v1/fundamentals/" %}
+[fundamentals](v1/fundamentals/)
 {% endcontent-ref %}
 
-{% content-ref url="documentation/infrastructure/" %}
-[infrastructure](documentation/infrastructure/)
+{% content-ref url="v1/infrastructure/" %}
+[infrastructure](v1/infrastructure/)
 {% endcontent-ref %}
 
-{% content-ref url="documentation/architecture/" %}
-[architecture](documentation/architecture/)
+{% content-ref url="v1/architecture/" %}
+[architecture](v1/architecture/)
 {% endcontent-ref %}
