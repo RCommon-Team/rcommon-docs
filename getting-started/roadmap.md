@@ -29,7 +29,6 @@ We've spent so long getting to the first public release that there is a laundry 
 * More comprehensive event bus infrastructure
   * Distributed Event Publishing: [MassTransit](https://masstransit.io/) (Enhanced)
   * Distributed Event Publishing: [Wolverine](https://wolverine.netlify.app/) (New)
-  * Distributed Event Publishing: [Just Saying](https://justeat.gitbook.io/justsaying/) (New)
 * More comprehensive persistence infrastructure
   * Persistence: [Linq2Db](https://linq2db.github.io/index.html) (New)
 * Improved Unit Testing Foundation
