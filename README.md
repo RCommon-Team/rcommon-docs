@@ -1,18 +1,18 @@
 ---
 description: >-
-  RCommon is an application framework that aims to provide a simple
-  configuration interface for commonly used infrastructure and architectural
-  patterns used widely across the .NET 6 stack.
+  RCommon is a cohesive set of libraries with abstractions for widely used
+  implementations of design patterns which are common (see what we did there?)
+  to many applications used today.
 ---
 
-# Welcome to RCommon
+# Introduction
 
 ## Our Philosophy
 
-We've built A LOT of applications on a lot of different application architectures with a variety of needs. During the design phase of those projects, we've made a lot of architectural choices based on the needs of the organization, budget, timeline, etc. Chances are that you've had to make some of these choices in the past. Or perhaps your making some of those choices right now. Our philosophy with RCommon is that software engineers should have flexibility in their choices of infrastructure, and the freedom from being strapped to those choices forever. Furthermore, we believe that having flexibility and freedom in application architecture, should not come at great cost to time or monetary value when you choose to exercise flexibility or freedom at any point in the future based on changing needs.
+We've worked on a lot of projects with a variety of needs. In some cases, we've been thrown into a legacy project whose design decision were made long ago. Whether you are beginning the design phase of your project or need to introduce new design patterns to an old application, our philosophy with RCommon is that software engineers should have flexibility in their choices of implementations, and the freedom from being strapped to those choices forever. Furthermore, we believe that having flexibility and freedom in application architecture, should not come at great cost to time or monetary value when you choose to exercise flexibility or freedom at any point in the future based on changing needs.
 
 {% hint style="info" %}
-**Quick Tip:** RCommon is a configuration heavy framework which allows us to give you only what  you need for your application. Before jumping into the samples, we recommend at least reading through the Fundamentals-> [Configuration ](v1/fundamentals/configuration.md)section.
+**Quick Tip:** RCommon is configuration oriented which allows us to give you only what you need for your application. Before jumping into the samples, we recommend at least reading through the Fundamentals-> [Configuration ](topics/fundamentals/configuration.md)section.
 {% endhint %}
 
 ### Jump Right In
@@ -31,18 +31,18 @@ Ok, we've got it...lets look at some code!
 
 Reading through the fundamentals of RCommon is a great place to improve your understanding of what it can do.&#x20;
 
-{% content-ref url="v1/introduction-and-use-cases/" %}
-[introduction-and-use-cases](v1/introduction-and-use-cases/)
+{% content-ref url="topics/use-cases/" %}
+[use-cases](topics/use-cases/)
 {% endcontent-ref %}
 
-{% content-ref url="v1/fundamentals/" %}
-[fundamentals](v1/fundamentals/)
+{% content-ref url="topics/fundamentals/" %}
+[fundamentals](topics/fundamentals/)
 {% endcontent-ref %}
 
-{% content-ref url="v1/infrastructure/" %}
-[infrastructure](v1/infrastructure/)
+{% content-ref url="topics/infrastructure/" %}
+[infrastructure](topics/infrastructure/)
 {% endcontent-ref %}
 
-{% content-ref url="v1/architecture/" %}
-[architecture](v1/architecture/)
+{% content-ref url="topics/architecture/" %}
+[architecture](topics/architecture/)
 {% endcontent-ref %}

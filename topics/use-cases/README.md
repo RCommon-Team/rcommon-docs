@@ -4,9 +4,9 @@ description: >-
   existing projects with predefined infrastructure.
 ---
 
-# Introduction and Use Cases
+# Use Cases
 
-{% content-ref url="green-field.md" %}
-[green-field.md](green-field.md)
+{% content-ref url="green-field-projects.md" %}
+[green-field-projects.md](green-field-projects.md)
 {% endcontent-ref %}
 

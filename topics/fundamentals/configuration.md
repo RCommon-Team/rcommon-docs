@@ -4,7 +4,7 @@ description: How to configure RCommon.
 
 # Configuration
 
-The simplest way to configure RCommon is to use the configuration entry point serves as a fluent dependency injection interface for bootstrapping the framework and all its necessary dependencies. From there you'll need to choose which dependency injection container to use and instantiate the [correlated adapter](dependency-injection/di-providers/) so that RCommon knows which container to use to register and resolve dependencies from.&#x20;
+The simplest way to configure RCommon is to use the configuration entry point serves as a fluent dependency injection interface for bootstrapping the framework and all its necessary dependencies. From there you'll need to choose which dependency injection container to use and instantiate the [correlated adapter](broken-reference) so that RCommon knows which container to use to register and resolve dependencies from.&#x20;
 
 ### Method Extensions
 
@@ -29,7 +29,8 @@ protected void InitializeRCommon(IServiceCollection services)
     ConfigureRCommon.Using(new DotNetCoreContainerAdapter(Services))
         .WithGuidGenerator&#x3C;SequentialGuidGenerator>(x => 
             x.DefaultSequentialGuidType = SequentialGuidType.SequentialAsString));
-}</code></pre>
+}
+</code></pre>
 
 ### [Time and Date](../infrastructure/time-and-date.md)
 
@@ -54,7 +55,8 @@ protected void InitializeRCommon(IServiceCollection services)
         .And&#x3C;DataServicesConfiguration>(x =>
             x.WithUnitOfWork&#x3C;DefaultUnitOfWorkConfiguration>())
         .AddUnitOfWorkToMediatorPipeline());
-}</code></pre>
+}
+</code></pre>
 
 ### [Email Sending](../infrastructure/emailing/)
 
