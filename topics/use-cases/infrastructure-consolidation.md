@@ -1,9 +1,13 @@
 ---
-description: Object Relational Mapper (ORM) Abstraction
+description: >-
+  RCommon can give you a common way to write code and support multiple
+  infrastructures at the same time!
 ---
 
 # Infrastructure Consolidation
 
-## Use Case
+## Scenario
 
-You love using the repository pattern but you've been around long enough to watch [Linq to SQL](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/), several breaking changes of Entity Framework, and countless  flavors of Micro-ORMs go by and changing your data access layer one more time may free you from sanity. Or maybe you just want to learn from us - that deprecating large data access APIs on a semi regular basis is just the way it is. Either way, we welcome you to the relative calm of existence of [persistence abstraction](../fundamentals/persistence/). As it turns out, there aren't that many ways to use ORMs, so why should your application suffer is there is a major update to your favorite ORM? The answer is "it shouldn't", and this is why we built our persistence abstraction layer.
+"Hey Jason, it's a long story but we use multiple database management systems, Azure for 'this', and AWS for 'that'. There is a plan to move to 'XYZ' long term but migrating will be difficult."
+
+While we can't help with your infrastructure migration, RCommon can ensure that swapping out your infrastructure implementation in your code is a relatively simple task. RCommon utilizes abstractions of a variety of patterns so that developers write code against those abstractions rather than specific implementations. For example, switching from Azure Event Hub to AWS SNS/SQS is as easy as changing a few lines of configuration code...after you stand up the infrastructure, and migrate your existing data of course!&#x20;
