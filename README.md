@@ -23,13 +23,7 @@ Ok, we've got it...lets look at some code!
 [running-samples.md](getting-started/running-samples.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-### Dive a little deeper
-
-Reading through the fundamentals of RCommon is a great place to improve your understanding of what it can do.&#x20;
+### Dive a Little Deeper
 
 {% content-ref url="topics/use-cases/" %}
 [use-cases](topics/use-cases/)
@@ -46,3 +40,17 @@ Reading through the fundamentals of RCommon is a great place to improve your und
 {% content-ref url="topics/architecture/" %}
 [architecture](topics/architecture/)
 {% endcontent-ref %}
+
+
+
+### License
+
+You are welcome to use RCommon under the [Apache 2.0 software license](https://www.apache.org/licenses/LICENSE-2.0).&#x20;
+
+{% hint style="info" %}
+NOT LEGAL ADVICE: We're not lawyers but here is a little explainer about the Apache 2.0 license. The [Apache software license](https://www.apache.org/licenses/LICENSE-2.0) gives users permission to reuse code for nearly any purpose, including using the code as part of proprietary software. As with other [open source licenses](https://snyk.io/learn/open-source-licenses/), the Apache license governs how end-users can utilize the software in their own projects. The Apache license requires developers to disclose any major changes they make to the original source code. The modified source code does not need to be revealed, but a notice of the modification is required. However, any unmodified code must retain the Apache license.
+{% endhint %}
+
+### Credit
+
+RCommon was originally born from the [NCommon](https://github.com/riteshrao/ncommon) project under the Apache 2.0 license. While you may still find some of the original code from that project, we have basically redesigned everything from the ground up. That said, thanks Ritesh Rao for the inspiration way back in 2008!

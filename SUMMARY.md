@@ -14,7 +14,7 @@
 
 * [Use Cases](topics/use-cases/README.md)
   * [Green Field Projects](topics/use-cases/green-field-projects.md)
-  * [Lack of Infrastructure Code](topics/use-cases/lack-of-infrastructure-code.md)
+  * [Lack of Infrastructure Code](topics/use-cases/legacy-codebases.md)
   * [Reduce Technical Debt](topics/use-cases/reduce-technical-debt.md)
   * [Infrastructure Consolidation](topics/use-cases/infrastructure-consolidation.md)
   * [Multiple Teams/Tooling](topics/use-cases/multiple-teams-tooling.md)
