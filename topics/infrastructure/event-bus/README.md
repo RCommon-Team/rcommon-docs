@@ -2,7 +2,7 @@
 description: Event Bus implementation in RCommon
 ---
 
-# Event Bus
+# Message Bus
 
 {% content-ref url="masstransit.md" %}
 [masstransit.md](masstransit.md)

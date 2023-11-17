@@ -4,8 +4,6 @@ description: Sending email through the SendGrid API with RCommon
 
 # SendGrid Email API
 
-
-
 [SendGrid ](https://sendgrid.com/solutions/email-api/)is one of the most popular ways to send email these days.  RCommon provides a simple interface to the SendGrid API.
 
 ### Configuration

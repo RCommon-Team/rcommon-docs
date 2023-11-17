@@ -25,40 +25,34 @@ We've spent so long getting to the first public release that there is a laundry 
 #### Planned Features / Enhancements
 
 * Simplified Dependency Injection API
-* Redesigned Unit of Work implementation
-* More comprehensive event bus infrastructure
+* Redesigned Unit of Work
+* More comprehensive message bus infrastructure
   * Distributed Event Publishing: [MassTransit](https://masstransit.io/) (Enhanced)
   * Distributed Event Publishing: [Wolverine](https://wolverine.netlify.app/) (New)
 * More comprehensive persistence infrastructure
   * Persistence: [Linq2Db](https://linq2db.github.io/index.html) (New)
+* Domain Driven Design Support
+  * Aggregate root
+  * DDD Sample
+* Event Sourcing Abstractions
+  * EventStore
+  * Event State
+  * Read Model Projection
+  * Microservices Sample
 * Improved Unit Testing Foundation
 
 ### Version 2.1
 
-Up to this point, there has been nothing preventing developers from building applications using domain driven design (DDD). But there are a few hiccups to getting there: the inability to delineate between transactional and non-transactional domain events, and having to roll your own aggregate root. This version attempts to reconcile all that!
+Building upon a solid and fairly comprehensive set of persistence, and domain driven design, our next focus will be on hardening the previous release and introducing some smaller features and enhancements.
 
 * CRUD Repositories Document DBs
   * MongoDB
 * Transactional and non-transactional domain events
-* Aggregate root support
-* DDD Sample
 * Soft Deleting
 * Multitenancy
 * Concurrency Support
 
 ### Version 2.2
-
-Building upon a solid and fairly comprehensive set of persistence, and domain driven design, our next focus will be on layering in support for event driven applications.&#x20;
-
-* Event Sourcing Abstractions
-  * EventStore Support
-  * MongoDB Support
-  * Elastic Support
-  * Transactional DB (SQL) Support
-  * Read Model Projection Support
-* Microservices Sample
-
-### Version 2.3
 
 Filling in some gaps with various implementations that are commonly used.&#x20;
 

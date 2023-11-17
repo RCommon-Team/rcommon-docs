@@ -14,4 +14,5 @@ The validator behavior is useful anytime you want to de-couple request/DTO valid
         
     // This will inject all fluent validators
     services.AddValidatorsFromAssemblyContaining&#x3C;ClassInAssemblyThatHasValidators>();
-}</code></pre>
+}
+</code></pre>

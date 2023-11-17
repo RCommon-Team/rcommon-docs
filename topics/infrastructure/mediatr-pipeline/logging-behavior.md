@@ -11,4 +11,5 @@ The [logging behavior](https://github.com/RCommon-Team/RCommon/blob/master/Src/R
 
     ConfigureRCommon.Using(new DotNetCoreContainerAdapter(Services))
         .AddLoggingToMediatorPipeline());
-}</code></pre>
+}
+</code></pre>
