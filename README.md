@@ -9,7 +9,7 @@ description: >-
 
 ## Our Philosophy
 
-We've worked on a lot of projects with a variety of needs. In some cases, we've been thrown into a legacy project whose design decision were made long ago. Whether you are beginning the design phase of your project or need to introduce new design patterns to an old application, our philosophy with RCommon is that software engineers should have flexibility in their choices of implementations, and the freedom from being strapped to those choices forever. Furthermore, we believe that having flexibility and freedom in application architecture, should not come at great cost to time or monetary value when you choose to exercise flexibility or freedom at any point in the future based on changing needs.
+We've worked on a lot of projects with a variety of needs. In some cases, we've been thrown into a legacy project whose design decisions were made long ago. Whether you are beginning the design phase of your project or need to introduce new design patterns to an old application, our philosophy with RCommon is that software engineers should have flexibility in their choices of implementations, and the freedom from being strapped to those choices forever. Furthermore, we believe that having flexibility and freedom in application architecture, should not come at great cost to time or monetary value when you choose to exercise flexibility or freedom at any point in the future based on changing needs.
 
 {% hint style="info" %}
 **Quick Tip:** RCommon is configuration oriented which allows us to give you only what you need for your application. Before jumping into the samples, we recommend at least reading through the Fundamentals-> [Configuration ](topics/fundamentals/configuration.md)section.

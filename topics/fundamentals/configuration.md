@@ -21,7 +21,7 @@ protected void InitializeRCommon(IServiceCollection services)
 }
 ```
 
-### [Guid Generation](../infrastructure/guid-generation.md)
+### [Guid Generation](guid-generation.md)
 
 <pre class="language-csharp"><code class="lang-csharp"><strong>protected void InitializeRCommon(IServiceCollection services)
 </strong>{
@@ -32,7 +32,7 @@ protected void InitializeRCommon(IServiceCollection services)
 }
 </code></pre>
 
-### [Time and Date](../infrastructure/time-and-date.md)
+### [Time and Date](time-and-date.md)
 
 ```csharp
 protected void InitializeRCommon(IServiceCollection services)
@@ -43,7 +43,7 @@ protected void InitializeRCommon(IServiceCollection services)
 }
 ```
 
-### [MediaR Pipeline](design-patterns/mediator.md)
+### [MediaR Pipeline](../infrastructure/mediator/)
 
 <pre class="language-csharp"><code class="lang-csharp"><strong>protected void InitializeRCommon(IServiceCollection services)
 </strong>{
@@ -58,11 +58,11 @@ protected void InitializeRCommon(IServiceCollection services)
 }
 </code></pre>
 
-### [Email Sending](../infrastructure/emailing/)
+### [Email Sending](emailing/)
 
 
 
-### [Persistence w/ Unit of Work](persistence/)
+### [Persistence w/ Unit of Work](../infrastructure/persistence/)
 
 ```csharp
 protected void InitializeRCommon(IServiceCollection services)
@@ -77,7 +77,7 @@ protected void InitializeRCommon(IServiceCollection services)
 }
 ```
 
-### [Exception Handling](exception-handling/)
+### [Exception Handling](broken-reference)
 
 ```csharp
 protected void InitializeRCommon(IServiceCollection services)
