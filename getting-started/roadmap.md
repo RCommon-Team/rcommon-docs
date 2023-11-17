@@ -43,36 +43,30 @@ We've spent so long getting to the first public release that there is a laundry 
 
 ### Version 2.1
 
-Building upon a solid and fairly comprehensive set of persistence, and domain driven design, our next focus will be on hardening the previous release and introducing some smaller features and enhancements.
+Building upon a solid and fairly comprehensive set of persistence, and event driven architecture, our next focus will be on hardening the previous release and introducing some smaller features and enhancements.
 
 * CRUD Repositories Document DBs
   * MongoDB
-* Transactional and non-transactional domain events
 * Soft Deleting
+
+
+
+### Future Versions (Conceptual)
+
+* Transactional and non-transactional domain events
 * Multitenancy
 * Concurrency Support
-
-### Version 2.2
-
-Filling in some gaps with various implementations that are commonly used.&#x20;
-
 * Localization Support
 * Blob Abstractions
 * Template Abstractions
 * Identity Extensions
-
-### Future Versions (Conceptual)
-
-Implement abstractions needed for Actor model implementations.&#x20;
-
 * Implement Z.Extensions and deprecate all other foundational extensions methods (eliminate code bloat and increase unit testability)
-* Dapr Support
-* Akka.NET Support
-* Orleans Support?
-* Proto.Actor Support?
-
-Implement abstractions for Machine Learning implemenations
-
-* Sagemaker
-* Azure MLOps
+* Actor Models
+  * Dapr
+  * Akka.NET
+  * Orleans
+  * Proto.Actor
+* Implement abstractions for Machine Learning implemenations
+  * Sagemaker
+  * Azure MLOps
 
