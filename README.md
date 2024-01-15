@@ -19,8 +19,8 @@ We've worked on a lot of projects with a variety of needs. In some cases, we've 
 
 Ok, we've got it...lets look at some code!
 
-{% content-ref url="getting-started/running-samples.md" %}
-[running-samples.md](getting-started/running-samples.md)
+{% content-ref url="getting-started/running-examples.md" %}
+[running-examples.md](getting-started/running-examples.md)
 {% endcontent-ref %}
 
 ### Dive a Little Deeper

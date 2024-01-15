@@ -6,7 +6,7 @@ description: Roadmap for RCommon
 
 ### Version 1.0.0
 
-The initial version of RCommon was redesigned from the original NCommon project privately, but under the Apache 2.0 license. That version was not publicly released but we've built on the success of that production-level code.&#x20;
+The initial version of RCommon was redesigned from the original NCommon project privately, but under the Apache 2.0 license in 2008. That version was not publicly released but we've built on the success of that production-level code.&#x20;
 
 ### Version 1.0.1&#x20;
 
@@ -20,41 +20,45 @@ This release supports .NET 7 but does not add any additional features/enhancemen
 
 ### Version 2.0 (In Testing)
 
-We've spent so long getting to the first public release that there is a laundry list of items that need to get addressed - several new features, but also some opportunities for refinement. Given the scope of the changes to foundational layers, we feel a major version bump is warranted.  From there, we'll introduce new features more frequently using minor versions.&#x20;
+The first public release was developed mostly in private in 2008 and was used mainly as persistence infrastructure in enterprise applications. We've spent so long getting to the first public release that there have been many advancements in the development of common design and architectural patterns. Since 2013 - distributed applications, and microservices have seen a great deal of interest from the development community.  As such, we've built up a laundry list of new features, but also some opportunities for refinement to provide a foundation for building applications for years to come. Given the scope of the changes to foundational layers, we feel a major version bump is warranted.  From there, we'll introduce new features more frequently using minor versions. This version has major breaking changes due to the nature of the updates so please be cautious with the upgrade.&#x20;
 
 #### Planned Features / Enhancements
 
+* .NET 6, 7, 8+ Support
 * Simplified Dependency Injection API
 * Redesigned Unit of Work
-* More comprehensive message bus infrastructure
-  * Distributed Event Publishing: [MassTransit](https://masstransit.io/) (Enhanced)
-  * Distributed Event Publishing: [Wolverine](https://wolverine.netlify.app/) (New)
+* CQRS Pattern (New)
+  * Commands & Command Handlers
+  * Queries & Query Handlers
+  * Read Model Abstractions
+  * Auto-Http API for Commands and Queries
+* Event Handling & Messaging
+  * In Memory Event Bus (New)
+  * Event Producing/Subscribing: [MassTransit](https://masstransit.io/) (Enhanced)
+  * Event Producing/Subscribing: [Wolverine](https://wolverine.netlify.app/) (New)
 * More comprehensive persistence infrastructure
   * Persistence: [Linq2Db](https://linq2db.github.io/index.html) (New)
-* Domain Driven Design Support
-  * Aggregate root
-  * DDD Sample
+* Domain Driven Design Support (New)
+* Improved Unit Testing Foundation
+* Examples
+  * Microservices
+  * Domain Driven Design
+
+### Version 2.1
+
+Building upon a solid and fairly comprehensive set of persistence, and event driven architecture, our next focus will be on implementing the Event Sourcing pattern with a couple of different widely used event sourcing libraries/frameworks.
+
 * Event Sourcing Abstractions
   * EventStore
   * Event State
   * Read Model Projection
-  * Microservices Sample
-* Improved Unit Testing Foundation
-
-### Version 2.1
-
-Building upon a solid and fairly comprehensive set of persistence, and event driven architecture, our next focus will be on hardening the previous release and introducing some smaller features and enhancements.
-
-* CRUD Repositories Document DBs
-  * MongoDB
 * Soft Deleting
-
-
-
-### Future Versions (Conceptual)
-
-* Transactional and non-transactional domain events
 * Multitenancy
+
+
+
+### Potential Future Features
+
 * Concurrency Support
 * Localization Support
 * Blob Abstractions
