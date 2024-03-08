@@ -2,5 +2,5 @@
 description: Coming soon...
 ---
 
-# Read Models
+# Event Store
 

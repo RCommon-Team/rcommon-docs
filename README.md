@@ -45,7 +45,7 @@ Ok, we've got it...lets look at some code!
 
 ### License
 
-You are welcome to use RCommon under the [Apache 2.0 software license](https://www.apache.org/licenses/LICENSE-2.0).&#x20;
+You are welcome to use RCommon under dual licensing of the [Apache 2.0 software license](https://www.apache.org/licenses/LICENSE-2.0) and [MIT license](https://mit-license.org/)
 
 {% hint style="info" %}
 NOT LEGAL ADVICE: We're not lawyers but here is a little explainer about the Apache 2.0 license. The [Apache software license](https://www.apache.org/licenses/LICENSE-2.0) gives users permission to reuse code for nearly any purpose, including using the code as part of proprietary software. As with other [open source licenses](https://snyk.io/learn/open-source-licenses/), the Apache license governs how end-users can utilize the software in their own projects. The Apache license requires developers to disclose any major changes they make to the original source code. The modified source code does not need to be revealed, but a notice of the modification is required. However, any unmodified code must retain the Apache license.
@@ -53,4 +53,6 @@ NOT LEGAL ADVICE: We're not lawyers but here is a little explainer about the Apa
 
 ### Credit
 
-RCommon was originally born from the [NCommon](https://github.com/riteshrao/ncommon) project under the Apache 2.0 license. While you may still find some of the original code from that project, we have basically redesigned everything from the ground up. That said, thanks Ritesh Rao for the inspiration way back in 2008!
+Persistence and unit of work concepts were derived from the [NCommon](https://github.com/riteshrao/ncommon) project under the Apache 2.0 license. While you may still find some of the original code from that project, we have basically redesigned everything from the ground up. That said, thanks Ritesh Rao for the inspiration way back in 2008!
+
+CQRS, DDD, and Event Sourcing concepts would have been a lot tougher to come up with if it weren't for a lot of help from [EventFlow](https://docs.geteventflow.net/) (MIT license), [Eventuous](https://eventuous.dev/) (Apache 2.0 license), and [Revo Framework](https://docs.revoframework.net/) (MIT license). Much of their code was inspiration and some of it was downright copied - the greatest compliment of all.

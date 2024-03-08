@@ -9,6 +9,7 @@
 * [Releases](getting-started/releases/README.md)
   * [1.0.1.75](getting-started/releases/1.0.1.75.md)
   * [1.0.2.0](getting-started/releases/1.0.2.0.md)
+  * [2.0.0.0](getting-started/releases/2.0.0.0.md)
 
 ## Topics
 
@@ -47,7 +48,9 @@
       * [Entity Framework Core](topics/fundamentals/persistence/providers/entity-framework-core.md)
       * [Dapper](topics/fundamentals/persistence/providers/dapper.md)
       * [Linq2Db](topics/infrastructure/persistence/repository/linq2db.md)
-    * [Event Sourcing](topics/infrastructure/persistence/event-sourcing.md)
+    * [Event Sourcing](topics/infrastructure/persistence/event-sourcing/README.md)
+      * [Event Store](topics/infrastructure/persistence/event-sourcing/event-store.md)
+      * [Event State](topics/infrastructure/persistence/event-sourcing/event-state.md)
     * [Transactions](topics/fundamentals/persistence/transactions/README.md)
       * [Unit of Work](topics/fundamentals/design-patterns/unit-of-work.md)
       * [Native Transactions](topics/fundamentals/persistence/transactions/native-transactions.md)
@@ -56,8 +59,9 @@
     * [Projections](topics/infrastructure/read-models/projections.md)
   * [Events](topics/infrastructure/events/README.md)
     * [Event Bus](topics/infrastructure/events/event-bus.md)
-    * [Synchronous Events](topics/infrastructure/events/synchronous-events.md)
-    * [Asynchronous Events](topics/infrastructure/events/asynchronous-events.md)
+    * [Synchronous Events](topics/infrastructure/events/local-events.md)
+    * [Domain Events](topics/infrastructure/events/domain-events.md)
+    * [Asynchronous Events](topics/infrastructure/events/distributed-events.md)
     * [Subscribers](topics/infrastructure/events/subscribers.md)
     * [Producers](topics/infrastructure/events/producers.md)
   * [Message Bus](topics/infrastructure/event-bus/README.md)
@@ -72,4 +76,4 @@
 
 ## Examples
 
-* [Clean Architecture with CQRS](examples/clean-architecture-with-cqrs.md)
+* [Clean Architecture with CQRS](samples/clean-architecture-with-cqrs.md)

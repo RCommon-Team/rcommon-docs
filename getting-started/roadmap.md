@@ -18,7 +18,7 @@ Our first public release published in late 2022. [GitHub "1.0.1.75"](https://git
 
 This release supports .NET 7 but does not add any additional features/enhancements beyond that. The [GitHub "Main" branch](https://github.com/RCommon-Team/RCommon/tree/main) represents the current state. We will conintue to support 1.0.2.x as long as .NET 7 is supported.&#x20;
 
-### Version 2.0 (In Testing)
+### Version 2.0 (In Alpha)
 
 The first public release was developed mostly in private in 2008 and was used mainly as persistence infrastructure in enterprise applications. We've spent so long getting to the first public release that there have been many advancements in the development of common design and architectural patterns. Since 2013 - distributed applications, and microservices have seen a great deal of interest from the development community.  As such, we've built up a laundry list of new features, but also some opportunities for refinement to provide a foundation for building applications for years to come. Given the scope of the changes to foundational layers, we feel a major version bump is warranted.  From there, we'll introduce new features more frequently using minor versions. This version has major breaking changes due to the nature of the updates so please be cautious with the upgrade.&#x20;
 
