@@ -15,77 +15,76 @@ There is no configuration to use our method extensions right out of gate. There 
 At minimum, you will need to configure a container adapter. This will bootstrap your application with RCommon using the dependency injection container of your choice. The minimum configuration provides you will access to many utility classes and services.&#x20;
 
 ```csharp
-protected void InitializeRCommon(IServiceCollection services)
-{
-    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(services));
-}
+// Add RCommon services
+builder.Services.AddRCommon();
 ```
 
 ### [Guid Generation](../infrastructure/guid-generation.md)
 
-<pre class="language-csharp"><code class="lang-csharp"><strong>protected void InitializeRCommon(IServiceCollection services)
-</strong>{
-
-    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(Services))
-        .WithGuidGenerator&#x3C;SequentialGuidGenerator>(x => 
-            x.DefaultSequentialGuidType = SequentialGuidType.SequentialAsString));
-}
-</code></pre>
-
-### [Time and Date](../infrastructure/time-and-date.md)
-
 ```csharp
-protected void InitializeRCommon(IServiceCollection services)
-{
-
-    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(Services))
-        .WithDateTimeSystem<SystemTime>(x => x.Kind = DateTimeKind.Utc));
-}
+// Add RCommon services
+builder.Services.AddRCommon()
+    .WithSequentialGuidGenerator(guid => guid.DefaultSequentialGuidType = SequentialGuidType.SequentialAsString);
 ```
 
-### [MediaR Pipeline](design-patterns/mediator.md)
+### [Time and Date](../infrastructure/time-and-date.md)&#x20;
 
-<pre class="language-csharp"><code class="lang-csharp"><strong>protected void InitializeRCommon(IServiceCollection services)
-</strong>{
-
-    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(Services))
-        .WithStateStorage&#x3C;DefaultStateStorageConfiguration>()
-        .WithPersistence&#x3C;EFCoreConfiguration>(x =>
-            x.UsingDbContext&#x3C;LeaveManagementDbContext>())
-        .And&#x3C;DataServicesConfiguration>(x =>
-            x.WithUnitOfWork&#x3C;DefaultUnitOfWorkConfiguration>())
-        .AddUnitOfWorkToMediatorPipeline());
-}
-</code></pre>
+```csharp
+// Add RCommon services
+builder.Services.AddRCommon()
+    .WithDateTimeSystem(dateTime => dateTime.Kind = DateTimeKind.Utc);
+```
 
 ### [Email Sending](../infrastructure/emailing/)
 
-
+```csharp
+// Add RCommon services
+builder.Services.AddRCommon()
+    .WithSendGridEmailServices(x =>
+    {
+        var sendGridSettings = builder.Configuration.Get<SendGridEmailSettings>();
+        x.SendGridApiKey = sendGridSettings.SendGridApiKey;
+        x.FromNameDefault = sendGridSettings.FromNameDefault;
+        x.FromEmailDefault = sendGridSettings.FromEmailDefault;
+    });
+```
 
 ### [Persistence w/ Unit of Work](persistence/)
 
 ```csharp
-protected void InitializeRCommon(IServiceCollection services)
-{
-
-    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(Services))
-        .WithStateStorage<DefaultStateStorageConfiguration>()
-        .WithPersistence<EFCoreConfiguration>(x =>
-            x.UsingDbContext<LeaveManagementDbContext>())
-        .And<DataServicesConfiguration>(x =>
-            x.WithUnitOfWork<DefaultUnitOfWorkConfiguration>()));
-}
+// Add RCommon services
+builder.Services.AddRCommon()
+    .WithPersistence<EFCorePerisistenceBuilder, DefaultUnitOfWorkBuilder>(ef => // Repository/ORM configuration. We could easily swap out to NHibernate without impact to domain service up through the stack
+    {
+        // Add all the DbContexts here
+        ef.AddDbContext<LeaveManagementDbContext>("LeaveManagementConnectionString", options =>
+        {
+            options.UseSqlServer(
+                builder.Configuration.GetConnectionString("LeaveManagementConnectionString"));
+        });
+        ef.SetDefaultDataStore(dataStore =>
+        {
+            dataStore.DefaultDataStoreName = "LeaveManagementConnectionString";
+        });
+    }, unitOfWork =>
+    {
+        unitOfWork.SetOptions(options =>
+        {
+            options.AutoCompleteScope = true;
+            options.DefaultIsolation = IsolationLevel.ReadCommitted;
+        });
+    });
 ```
 
-### [Exception Handling](broken-reference)
+### [Event Handling](broken-reference)
 
 ```csharp
-protected void InitializeRCommon(IServiceCollection services)
-{
-
-    ConfigureRCommon.Using(new DotNetCoreContainerAdapter(services))
-        .And<EhabExceptionHandlingConfiguration>(x=>
-            x.UsingDefaultExceptionPolicies());
-}
+// Configure RCommon
+services.AddRCommon()
+    .WithEventHandling<InMemoryEventBusBuilder>(eventHandling =>
+    {
+        eventHandling.AddProducer<PublishWithEventBusEventProducer>();
+        eventHandling.AddSubscriber<TestEvent, TestEventHandler>();
+    });
 ```
 

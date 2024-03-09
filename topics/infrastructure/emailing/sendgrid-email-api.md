@@ -9,15 +9,12 @@ description: Sending email through the SendGrid API with RCommon
 ### Configuration
 
 ```csharp
-ConfigureRCommon.Using(new DotNetCoreContainerAdapter(builder.Services))
-    .WithSendGridEmailServices(x =>
+services.AddRCommon()
+    .WithSendGridEmailServices(settings =>
     {
-        // Note that you can use a configuration from appSettings.json (like we did) 
-        //  or set the variables anyway you want
-        var sendGridSettings = builder.Configuration.Get<SendGridEmailSettings>();
-        x.SendGridApiKey = sendGridSettings.SendGridApiKey;
-        x.FromNameDefault = sendGridSettings.FromNameDefault;
-        x.FromEmailDefault = sendGridSettings.FromEmailDefault;
+        settings.SendGridApiKey = "apiKey";
+        settings.FromNameDefault = "test system";
+        settings.FromEmailDefault = "test@test.rcommon.com";
     });
 ```
 

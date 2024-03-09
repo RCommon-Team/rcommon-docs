@@ -4,6 +4,16 @@ description: Accessing authenticated user information from RCommon
 
 # Current User
 
+### Configuration
+
+```csharp
+// Add RCommon services
+builder.Services.AddRCommon()
+    .WithClaimsAndPrincipalAccessor();
+```
+
+### Usage
+
 ```csharp
 public class MyService
 {

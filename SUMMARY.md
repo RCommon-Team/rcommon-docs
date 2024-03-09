@@ -54,7 +54,6 @@
     * [Transactions](topics/fundamentals/persistence/transactions/README.md)
       * [Unit of Work](topics/fundamentals/design-patterns/unit-of-work.md)
       * [Native Transactions](topics/fundamentals/persistence/transactions/native-transactions.md)
-      * [Distributed Transactions](topics/fundamentals/persistence/transactions/distributed-transactions.md)
   * [Read Models](topics/infrastructure/read-models/README.md)
     * [Projections](topics/infrastructure/read-models/projections.md)
   * [Events](topics/infrastructure/events/README.md)

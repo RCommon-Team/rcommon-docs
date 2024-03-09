@@ -9,17 +9,17 @@ Sending email through an SMTP server is one of the most common ways of deliverin
 ### Configuration
 
 ```csharp
-ConfigureRCommon.Using(new DotNetCoreContainerAdapter(builder.Services))
+services.AddRCommon()
     .WithSmtpEmailServices(settings =>
-    {
-        settings.EnableSsl = true;
-        settings.FromEmailDefault = "you@ytest.com";
-        settings.FromNameDefault = "test system";
-        settings.Host = "smtp.sendgrid.net";
-        settings.Password = "yourpassword";
-        settings.Port = 587;
-        settings.UserName = "username";
-    });
+        {
+            settings.EnableSsl = true;
+            settings.FromEmailDefault = "you@ytest.com";
+            settings.FromNameDefault = "test system";
+            settings.Host = "smtp.sendgrid.net";
+            settings.Password = "yourpassword";
+            settings.Port = 587;
+            settings.UserName = "username";
+        });
 ```
 
 ### Usage
