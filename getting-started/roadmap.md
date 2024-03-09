@@ -30,36 +30,38 @@ The first public release was developed mostly in private in 2008 and was used ma
 * CQRS Pattern (New)
   * Commands & Command Handlers
   * Queries & Query Handlers
-  * Read Model Abstractions
-  * Auto-Http API for Commands and Queries
 * Event Handling & Messaging
   * In Memory Event Bus (New)
   * Event Producing/Subscribing: [MassTransit](https://masstransit.io/) (Enhanced)
   * Event Producing/Subscribing: [Wolverine](https://wolverine.netlify.app/) (New)
 * More comprehensive persistence infrastructure
   * Persistence: [Linq2Db](https://linq2db.github.io/index.html) (New)
-* Domain Driven Design Support (New)
 * Improved Unit Testing Foundation
 * Examples
   * Microservices
-  * Domain Driven Design
 
-### Version 2.1
+### Version 2.0.\*
 
 Building upon a solid and fairly comprehensive set of persistence, and event driven architecture, our next focus will be on implementing the Event Sourcing pattern with a couple of different widely used event sourcing libraries/frameworks.
 
+* CQRS Pattern
+  * Read Model Abstractions
+  * Auto-Http API for Commands and Queries
 * Event Sourcing Abstractions
   * EventStore
   * Event State
   * Read Model Projection
 * Soft Deleting
 * Multitenancy
+* Domain Driven Design Support (New)
 
 
 
 ### Potential Future Features
 
 * Concurrency Support
+* Cached Repository Data
+* ETL Support
 * Localization Support
 * Blob Abstractions
 * Template Abstractions
