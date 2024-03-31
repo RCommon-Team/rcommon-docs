@@ -4,7 +4,7 @@ description: Local/In Memory Events and Event Handling in RCommon.
 
 # Synchronous Events
 
-Local events are events which are raised and then handled in memory. Keep in mind that the term "local event" is not a technical term, but rather a way of delineating between events which are raised and handled in memory vs. events which may be raised in memory but distributed to applications outside of your ecosystem where they are consumed/handled.&#x20;
+Local events are events which are raised and then handled in memory. Keep in mind that the term "local event" is not a technical term, but rather a way of delineating between events which are raised and handled in memory vs. events which may be raised in memory but distributed to applications outside of your domain where they are consumed/handled.&#x20;
 
 While events are not a new thing for developers, RCommon has implemented them in a variety of meaningful patterns which allow you to jump past having to think through plumbing/infrastructure code and go right into building your application.&#x20;
 

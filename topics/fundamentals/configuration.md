@@ -49,7 +49,7 @@ builder.Services.AddRCommon()
     });
 ```
 
-### [Persistence w/ Unit of Work](persistence/)
+### [Persistence w/ Unit of Work](../patterns/persistence/)
 
 ```csharp
 // Add RCommon services

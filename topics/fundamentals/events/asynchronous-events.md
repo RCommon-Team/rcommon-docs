@@ -4,9 +4,9 @@ description: Distributed Event Handling in RCommon.
 
 # Asynchronous Events
 
-Distributed (a.k.a. Integrated) events, in contrast to [local events](local-events.md), are events which are raised and published with the express intent of having them distributed to and consumed by other applications that exist outside the in-memory process which raises them. The conduit by which these events are transported is called an [Event Bus](../event-bus/).&#x20;
+Distributed (a.k.a. Integrated) events, in contrast to [local events](synchronous-events.md), are events which are raised and published with the express intent of having them distributed to and consumed by other applications that exist outside the in-memory process which raises them. The conduit by which these events are transported is called an [Event Bus](../../patterns/message-bus/).&#x20;
 
-RCommon currently relies solely on [MassTransit ](../event-bus/masstransit.md)to distribute events along with the help of a simple distributed event broker which acts as a repository for any distributed events which are raised during the course of the application's runtime operations. The distributed event broker gives transactional control over when distributed events are published/dispatched. &#x20;
+RCommon currently relies solely on [MassTransit ](../../patterns/message-bus/masstransit.md)to distribute events along with the help of a simple distributed event broker which acts as a repository for any distributed events which are raised during the course of the application's runtime operations. The distributed event broker gives transactional control over when distributed events are published/dispatched. &#x20;
 
 Distributed events can easily be added to the DistributedEventBroker like this:
 

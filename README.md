@@ -7,9 +7,28 @@ description: >-
 
 # Introduction
 
-## Our Philosophy
+## Background
 
-We've worked on a lot of projects with a variety of needs. In some cases, we've been thrown into a legacy project whose design decisions were made long ago. Whether you are beginning the design phase of your project or need to introduce new design patterns to an old application, our philosophy with RCommon is that software engineers should have flexibility in their choices of implementations, and the freedom from being strapped to those choices forever. Furthermore, we believe that having flexibility and freedom in application architecture, should not come at great cost to time or monetary value when you choose to exercise flexibility or freedom at any point in the future based on changing needs.
+RCommon was created out of the need for infrastructure code which was flexible enough to be used in a wide array of enterprise applications. As the .NET ecosystems evolves, there has been a continuing need to evolve implementations/tooling in an enterprise capacity. That is to say, that while various tools get upgraded, we have a need of encapsulating that functionality to limit the impact of refactoring.
+
+##
+
+## What It IS
+
+* A relatively broad cross section of software engineering patterns that have been abstracted in a way that allows a wide range of implementations/tooling to be used
+* Infrastructure code that can be "bootstrapped" to any .NET 6, 7, or 8 application
+* Implementations of many popular libraries and patterns which cover the needs of many enterprise applications
+* The glue that an application needs to allow patterns and practices to interact in a meaningful and useful way
+* Battle hardened code that is being used in production across start-ups, medium sized companies and International 500 companies alike.&#x20;
+* Free: Under Apache-2.0 license, you will always be able to use this code for personal or commercial purposes.
+
+
+
+## What It IS NOT
+
+* A framework: meaning RCommon does not invert your application. You tell us what you need, not the other way around.
+* In depth implementations of each provider. RCommon covers the most common functionality of various tools but many of these tools offer a lot of depth to solve problems in their space. RCommon will not prevent you from using the tooling at an in depth level, but does not necessarily provide that level of support out of the box.&#x20;
+* Ambitious: we do not plan on converting/forking RCommon into a paid license at any time
 
 {% hint style="info" %}
 **Quick Tip:** RCommon is configuration oriented which allows us to give you only what you need for your application. Before jumping into the samples, we recommend at least reading through the Fundamentals-> [Configuration ](topics/fundamentals/configuration.md)section.
@@ -33,8 +52,8 @@ Ok, we've got it...lets look at some code!
 [fundamentals](topics/fundamentals/)
 {% endcontent-ref %}
 
-{% content-ref url="topics/infrastructure/" %}
-[infrastructure](topics/infrastructure/)
+{% content-ref url="topics/patterns/" %}
+[patterns](topics/patterns/)
 {% endcontent-ref %}
 
 {% content-ref url="topics/architecture/" %}
