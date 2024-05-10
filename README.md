@@ -15,7 +15,7 @@ RCommon was created out of the need for infrastructure code which was flexible e
 
 ## What It IS
 
-* A relatively broad cross section of software engineering patterns that have been abstracted in a way that allows a wide range of implementations/tooling to be used
+* A relatively broad cross section of software engineering patterns that have been abstracted in a way that allows a wide range of implementations/tooling to be used in a unit testing friendly manner
 * Infrastructure code that can be "bootstrapped" to any .NET 6, 7, or 8 application
 * Implementations of many popular libraries and patterns which cover the needs of many enterprise applications
 * The glue that an application needs to allow patterns and practices to interact in a meaningful and useful way
