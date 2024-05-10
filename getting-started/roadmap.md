@@ -32,6 +32,10 @@ The first public release was developed mostly in private in 2008 and was used ma
 * CQRS Pattern (New)
   * Commands & Command Handlers
   * Queries & Query Handlers
+* Validation (New)
+  * [FluentValidation ](https://docs.fluentvalidation.net/en/latest/)(New)
+  * Validation on Command/Query Bus pipeline
+  * Validation on Mediator pipeline
 * Event Handling & Messaging
   * In Memory Event Bus (New)
   * In Memory Producing/Subscribing: [MediatR](https://github.com/jbogard/MediatR) (New)

@@ -36,17 +36,13 @@ RCommon was created out of the need for infrastructure code which was flexible e
 
 ### Jump Right In
 
-Ok, we've got it...lets look at some code!
+Ok, we've got it...lets run some code!
 
 {% content-ref url="getting-started/running-examples.md" %}
 [running-examples.md](getting-started/running-examples.md)
 {% endcontent-ref %}
 
 ### Dive a Little Deeper
-
-{% content-ref url="topics/use-cases/" %}
-[use-cases](topics/use-cases/)
-{% endcontent-ref %}
 
 {% content-ref url="topics/fundamentals/" %}
 [fundamentals](topics/fundamentals/)

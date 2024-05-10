@@ -2,7 +2,7 @@
 description: Running samples for RCommon
 ---
 
-# Running Samples
+# Running Examples
 
 ## Requirements
 
@@ -18,7 +18,7 @@ Our "Clean Architecture with CQRS" sample was built from an [existing educationa
 
 ### Start Up Instructions
 
-1. Download or clone [the source code](https://github.com/RCommon-Team/RCommon) from GitHub
+1. Download or clone [the source code](https://github.com/RCommon-Team/RCommon)[ ](https://github.com/RCommon-Team/RCommon)from GitHub
 2. Right click on the HR.LeaveManagement.API project
 3. Choose "Open in Terminal" from menu
 4. Refer to Developer Powershell

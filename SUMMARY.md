@@ -9,16 +9,10 @@
 * [Releases](getting-started/releases/README.md)
   * [1.0.1.75](getting-started/releases/1.0.1.75.md)
   * [1.0.2.0](getting-started/releases/1.0.2.0.md)
-  * [2.0.0.0](getting-started/releases/2.0.0.0.md)
+  * [2.0.0](getting-started/releases/2.0.0.md)
 
 ## Topics
 
-* [Use Cases](topics/use-cases/README.md)
-  * [Green Field Projects](topics/use-cases/green-field-projects.md)
-  * [Infrastructure Code](topics/use-cases/infrastructure-code.md)
-  * [Reduce Technical Debt](topics/use-cases/reduce-technical-debt.md)
-  * [Infrastructure Consolidation](topics/use-cases/infrastructure-consolidation.md)
-  * [Multiple Teams/Tooling](topics/use-cases/multiple-teams-tooling.md)
 * [Fundamentals](topics/fundamentals/README.md)
   * [Configuration](topics/fundamentals/configuration.md)
   * [Logging](topics/fundamentals/logging.md)
@@ -38,6 +32,8 @@
     * [Asynchronous Events](topics/fundamentals/events/asynchronous-events.md)
     * [Producers](topics/fundamentals/events/producers.md)
     * [Subscribers](topics/fundamentals/events/subscribers.md)
+  * [Validation](topics/fundamentals/validation/README.md)
+    * [Fluent Validation](topics/fundamentals/validation/fluent-validation.md)
 * [Patterns](topics/patterns/README.md)
   * [Specification](topics/patterns/specification.md)
   * [Mediator](topics/patterns/mediator/README.md)
@@ -78,3 +74,4 @@
 * [Event Handling: MediatR](examples/event-handling-mediatr.md)
 * [Event Handling: MassTransit](examples/event-handling-masstransit.md)
 * [Event Handling: Wolverine](examples/event-handling-wolverine.md)
+* [Validation: Fluent Validation](examples/validation-fluent-validation.md)
