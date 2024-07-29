@@ -8,22 +8,19 @@ description: >-
 
 ```mermaid
 sequenceDiagram
-    participant Client
-    participant API Endpoint
-    participant Command Service
-    participant Aggregate
-    participant Aggregate Store
+  participant Client as Client
+  participant API Endpoint as API Endpoint
+  participant Command Service as Command Service
+  participant Persistence as Persistence Layer
+  participant Data Store as Data Store
 
-    Client->>+API Endpoint: Request
-    API Endpoint->>API Endpoint: Deserialize request
-    API Endpoint->>+Command Service: Command
-    Command Service->>+Aggregate Store: Load
-    Aggregate Store-->>-Command Service: Aggregate
-    Command Service->>+Aggregate: Execute
-    Aggregate-->>-Command Service: Updated aggregate
-    Command Service->>+Aggregate Store: Store changes
-    Aggregate Store-->>-Command Service: Return result
-    Command Service-->>-API Endpoint: Return result
-    API Endpoint-->>-Client: Return result
+  Client ->>+ API Endpoint: Request
+  API Endpoint ->> API Endpoint: Deserialize request
+  API Endpoint ->>+ Command Service: Command
+  Command Service ->>+ Persistence: Execute
+   Persistence ->>+ Data Store: Store Changes
+  Data Store -->>- Command Service: Return result
+  Command Service -->>- API Endpoint: Return result
+  API Endpoint -->>- Client: Return result
 
 ```
