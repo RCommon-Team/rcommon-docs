@@ -30,6 +30,7 @@
     * [Transactional Events](topics/fundamentals/events/transactional-events.md)
     * [Synchronous Events](topics/fundamentals/events/synchronous-events.md)
     * [Asynchronous Events](topics/fundamentals/events/asynchronous-events.md)
+    * [Event Router](topics/fundamentals/events/event-router.md)
     * [Producers](topics/fundamentals/events/producers.md)
     * [Subscribers](topics/fundamentals/events/subscribers.md)
   * [Validation](topics/fundamentals/validation/README.md)
