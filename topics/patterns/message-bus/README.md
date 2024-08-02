@@ -32,7 +32,7 @@ Distributing messages through a message bus requires serialization. As such, ens
 
 
 
-Examples
+### Examples
 
 {% content-ref url="../../../examples/event-handling-masstransit.md" %}
 [event-handling-masstransit.md](../../../examples/event-handling-masstransit.md)
