@@ -6,7 +6,7 @@ description: Message Bus implementations in RCommon.
 
 ### Overview
 
-Fundamentally, there is no difference between how RCommon handles events through a message bus, and how they are handled through an [event bus](../event-bus/). A message that you intend to send through a message bus still comes through the [event router](../../fundamentals/events/event-router.md), and is then broadcasted through the pipeline of [event producers](../../fundamentals/events/producers.md) that have been registered in dependency injection. The only thing that changes is the implementation of the[ event producer](../../fundamentals/events/producers.md) which uses a client for a message broker such as RabbitMQ, or Amazon SQS - which is ultimately implemented by one of the below [implementations](./#implementations).&#x20;
+Fundamentally, there is no difference between how RCommon handles events through a message bus, and how they are handled through an [event bus](../event-bus/). A message that you intend to send through a message bus still comes through the [event router](broken-reference), and is then broadcasted through the pipeline of [event producers](../../fundamentals/events/producers.md) that have been registered in dependency injection. The only thing that changes is the implementation of the[ event producer](../../fundamentals/events/producers.md) which uses a client for a message broker such as RabbitMQ, or Amazon SQS - which is ultimately implemented by one of the below [implementations](./#implementations).&#x20;
 
 ### Other Considerations
 

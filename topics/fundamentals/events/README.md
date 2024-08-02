@@ -34,27 +34,106 @@ You will notice that all events in RCommon are marked with the "ISerializable" i
 
 #### Marker Interfaces - A Rule
 
-RCommon utilizes marker interfaces substantially throughout event handling. This is to act as a guard rail and tagging mechanism for event routing, simplifying dependency injection, and to ultimately simplify what you can and cannot do with events within RCommon. This is in contrast to using attributes or nothing at all. Our feeling is that some guardrails are ok, so long as we are favoring composition over inheritance - an object oriented principle. Key marker interfaces
+RCommon utilizes marker interfaces in event handling. This is to act as a guard rail and tagging mechanism for event routing, simplifying dependency injection, and to ultimately simplify what you can and cannot do with events within RCommon. This is in contrast to using attributes or nothing at all. Our feeling is that some guardrails are ok, so long as we are favoring composition over inheritance - an object oriented principle. Key marker interfaces:
 
 [_ISerializableEvent_](#user-content-fn-1)[^1]
 
-This is a required interface for any event that is can be produced or subscribed to in RCommon.&#x20;
+This is a required interface for any event that is can be produced or subscribed to in RCommon. While your event does not technically need to be serializable, you will be [limited ](./#serialization-guidance)to building applications which run in-process. This is not an RCommon constraint but rather a constraint of most distributed application architectures. &#x20;
+
+```csharp
+using RCommon.EventHandling;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Examples.Messaging.MassTransit
+{
+    public class TestEvent : ISerializableEvent
+    {
+        public TestEvent(DateTime dateTime, Guid guid)
+        {
+            DateTime = dateTime;
+            Guid = guid;
+        }
+
+        public TestEvent()
+        {
+                
+        }
+
+        public DateTime DateTime { get; }
+        public Guid Guid { get; }
+    }
+}
+```
 
 _IAsyncEvent_
 
 This implements ISerializableEvent and identifies the event as one that should be processed asynchronously without regard for sequential order. This is the most efficient type of event.&#x20;
 
+```csharp
+using RCommon.EventHandling;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Examples.Messaging.MassTransit
+{
+    public class TestEvent : IAsyncEvent
+    {
+        public TestEvent(DateTime dateTime, Guid guid)
+        {
+            DateTime = dateTime;
+            Guid = guid;
+        }
+
+        public TestEvent()
+        {
+                
+        }
+
+        public DateTime DateTime { get; }
+        public Guid Guid { get; }
+    }
+}
+```
+
 _ISyncEvent_
 
-This also implements ISerializableEvent and identifies the event as one that should be processes using a first-in-first-out (FIFO) strategy with strong regard for order and sequencing.&#x20;
+This also implements ISerializableEvent and identifies the event as one that should be processes using a first-in-first-out (FIFO) strategy with strong regard for order and sequencing. &#x20;
 
-_ISubscriber_
+```csharp
+using RCommon.EventHandling;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-Required for any event handlers in RCommon no matter what they are being consumed from - message bus or event bus.
+namespace Examples.Messaging.MassTransit
+{
+    public class TestEvent : ISyncEvent
+    {
+        public TestEvent(DateTime dateTime, Guid guid)
+        {
+            DateTime = dateTime;
+            Guid = guid;
+        }
 
-_IEventProducer_
+        public TestEvent()
+        {
+                
+        }
 
-Required for any event producer to raise and/or transmit an event. &#x20;
+        public DateTime DateTime { get; }
+        public Guid Guid { get; }
+    }
+}
+```
 
 
 
