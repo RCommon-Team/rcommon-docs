@@ -12,7 +12,7 @@ Coming soon...
 
 Coming soon...
 
-### Mechanics of the Message Bus
+### Mechanics of the Event Bus
 
 #### Event a.k.a. Integration Event, Distributed Event, Message
 
