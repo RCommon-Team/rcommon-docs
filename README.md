@@ -9,7 +9,7 @@ description: >-
 
 ## Background
 
-RCommon was created out of the need for infrastructure code which was flexible enough to be used in a wide array of enterprise applications for .NET development teams that want to use strongly vetted patterns, and practices that have a high degree of scrutiny and validation in the .NET community and the software engineering community at large. As the .NET ecosystems evolves, there has been a continuing need to evolve implementations/tooling in an enterprise capacity. RCommon solves a number of architectural and operational challenges with growing and established development teams.&#x20;
+RCommon was created out of the need for infrastructure code which was flexible enough to be used in a wide array of enterprise applications in.NET development teams that want to use strongly vetted patterns, and practices that have a high degree of scrutiny and validation in the .NET community and the software engineering community at large. As the .NET ecosystems evolve, there has been a continuing need to evolve implementations/tooling in a manner that does not fundamentally require change at the infrastructure code level.&#x20;
 
 
 

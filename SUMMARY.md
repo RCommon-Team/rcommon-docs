@@ -1,6 +1,8 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [About the Author](about-the-author.md)
+* [Common Scenarios](common-scenarios.md)
 
 ## Getting Started
 
