@@ -9,9 +9,9 @@ description: >-
 
 ## Background
 
-RCommon was created out of the need for infrastructure code which was flexible enough to be used in a wide array of enterprise applications. As the .NET ecosystems evolves, there has been a continuing need to evolve implementations/tooling in an enterprise capacity. That is to say, that while various tools get upgraded, we have a need of encapsulating that functionality to limit the impact of refactoring.
+RCommon was created out of the need for infrastructure code which was flexible enough to be used in a wide array of enterprise applications for .NET development teams that want to use strongly vetted patterns, and practices that have a high degree of scrutiny and validation in the .NET community and the software engineering community at large. As the .NET ecosystems evolves, there has been a continuing need to evolve implementations/tooling in an enterprise capacity. RCommon solves a number of architectural and operational challenges with growing and established development teams.&#x20;
 
-##
+
 
 ## What It IS
 
@@ -27,7 +27,7 @@ RCommon was created out of the need for infrastructure code which was flexible e
 ## What It IS NOT
 
 * A framework: meaning RCommon does not invert your application. You tell us what you need, not the other way around.
-* In depth implementations of each provider. RCommon covers the most common functionality of various tools but many of these tools offer a lot of depth to solve problems in their space. RCommon will not prevent you from using the tooling at an in depth level, but does not necessarily provide that level of support out of the box.&#x20;
+* In depth implementations of each provider. RCommon covers the most common functionality of various tools but many of these tools offer a lot of depth to solve problems in their space. RCommon will not prevent you from using the tooling at an in depth level but does not necessarily provide that level of support out of the box.&#x20;
 * Ambitious: we do not plan on converting/forking RCommon into a paid license at any time
 
 {% hint style="info" %}
