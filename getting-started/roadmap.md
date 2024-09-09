@@ -45,7 +45,7 @@ The first public release was developed mostly in private in 2008 and was used ma
 * Examples
   * Leave Requestion Application (Enhanced)
 
-### Version 2.1.0 (Q2 2024)
+### Version 2.1.0 (Q3 2024)
 
 * JSON Serialization
   * Newtonsoft JSON.NET
@@ -56,7 +56,7 @@ The first public release was developed mostly in private in 2008 and was used ma
 * Persistence
   * Cached Queries
 
-### Version 2.2.0 (Q2/Late 2024)
+### Version 2.2.0 (Q3/Late 2024)
 
 * Identity
   * Entity Framework Core Identity Providers
