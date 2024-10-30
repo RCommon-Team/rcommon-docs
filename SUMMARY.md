@@ -11,6 +11,7 @@
   * [1.0.1.75](getting-started/releases/1.0.1.75.md)
   * [1.0.2.0](getting-started/releases/1.0.2.0.md)
   * [2.0.0](getting-started/releases/2.0.0.md)
+  * [2.1.0](getting-started/releases/2.1.0.md)
 
 ## Topics
 
@@ -35,6 +36,15 @@
     * [Subscribers](topics/fundamentals/events/subscribers.md)
   * [Validation](topics/fundamentals/validation/README.md)
     * [Fluent Validation](topics/fundamentals/validation/fluent-validation.md)
+  * [Caching](topics/fundamentals/caching/README.md)
+    * [Dynamically Compiled Expressions](topics/fundamentals/caching/dynamically-compiled-expressions.md)
+    * [Persistence Caching](topics/fundamentals/caching/persistence-caching.md)
+    * [Caching Services](topics/fundamentals/caching/caching-services.md)
+    * [Redis & Valkey](topics/fundamentals/caching/redis-and-valkey.md)
+    * [Memory Cache](topics/fundamentals/caching/memory-cache.md)
+  * [Serialization](topics/fundamentals/serialization/README.md)
+    * [JSON.NET](topics/fundamentals/serialization/json.net.md)
+    * [System.Text.Json](topics/fundamentals/serialization/system.text.json.md)
 * [Patterns](topics/patterns/README.md)
   * [Specification](topics/patterns/specification.md)
   * [Mediator](topics/patterns/mediator/README.md)
