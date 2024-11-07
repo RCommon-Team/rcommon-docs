@@ -48,10 +48,10 @@ The first public release was developed mostly in private in 2008 and was used ma
 ### Version 2.1.0 (Current)
 
 * JSON Serialization (New)
-  * Newtonsoft JSON.NET
+  * [Newtonsoft JSON.NET](https://www.newtonsoft.com/json)
   * System.Text.Json
 * Caching (New)
-  * Redis/Valkey Caching
+  * [Redis](https://redis.io/)/[Valkey ](https://valkey.io/)Caching
   * In Memory Caching
 * Persistence
   * Cached Queries (New)
