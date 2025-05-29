@@ -56,8 +56,9 @@ The first public release was developed mostly in private in 2008 and was used ma
 * Persistence
   * Cached Queries (New)
 
-### Version 2.2.\* (Q4/Late 2024)
+### Version 2.2.\*&#x20;
 
+* .NET 9 Support
 * Identity
   * Entity Framework Core Identity Providers
   * Linq2Db Identity Providers
@@ -70,12 +71,14 @@ The first public release was developed mostly in private in 2008 and was used ma
   * Path Strategy
 * Asp.Net Core
   * API Key Authentication
-  * Claims based Authorization
+  * Claims based Authorization&#x20;
 
-### Version 2.3.\*
 
-Building upon a solid and fairly comprehensive set of persistence, and event driven architecture, our next focus will be on implementing the Event Sourcing pattern with a couple of different widely used event sourcing libraries/frameworks.
 
+### Potential Future Features
+
+* Supabase Repository
+* Concurrency Support
 * CQRS Pattern
   * Read Model Abstractions
   * Auto-Http API for Commands and Queries
@@ -85,23 +88,15 @@ Building upon a solid and fairly comprehensive set of persistence, and event dri
   * Read Model Projection
 * Soft Deleting
 * Domain Driven Design Support (New)
-
-
-
-### Potential Future Features
-
-* Concurrency Support
 * ETL Support
 * Localization Support
 * Blob Abstractions
 * Template Abstractions
-* Implement Z.Extensions and deprecate all other foundational extensions methods (eliminate code bloat and increase unit testability)
-* Actor Models
-  * Dapr
-  * Akka.NET
-  * Orleans
-  * Proto.Actor
-* Implement abstractions for Machine Learning implemenations
-  * Sagemaker
-  * Azure MLOps
+* AI
+  * Agent to Agent (A2A) Support
+  * Model Context Protocol Support
+
+
+
+
 
